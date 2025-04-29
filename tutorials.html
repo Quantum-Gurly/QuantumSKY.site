@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>QuantumSKY</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        :root {
+          --green: #34a853;
+          --blue: #00bfff;
+          --dark: #0f1c4d;
+          --bg: #f0fdf9;
+        }
+    
+        body {
+          margin: 0;
+          font-family: 'Segoe UI', sans-serif;
+          background-color: var(--bg);
+          color: var(--dark);
+        }
+    
+        /* Header Styles */
+       
+        .header-strip {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #96f7e9;
+          padding: 20px;
+          color: var(--dark);
+          box-shadow: 0 2px 5px #f0fdf9;
+         
+        }
+    
+        .logo {
+           
+            display: flex;
+          align-items: center;
+        }
+    
+        .logo img {
+            width: 100px;     /* Try 250px or 300px if needed */
+          height: auto;     /* Keeps the image from stretching */
+          max-width: 100%;  /* Keeps it responsive */
+          display: block;
+    
+        }
+    
+        .company-name {
+          font-size: 3rem;
+          font-weight: 700;
+          letter-spacing: 2px;
+          color: var(--dark);
+          font-family: 'Arial', sans-serif;
+          text-shadow: 2px 2px 5px wheat;
+        }
+    
+        .header-links a {
+          color: var(--dark);
+          text-decoration: none;
+          margin-left: 20px;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+    
+        .header-links a:hover {
+          color: var(--blue);
+        }
+    
+        .sign-up-button {
+          background-color: var(--blue);
+          color: white;
+          padding: 10px 20px;
+          border-radius: 25px;
+          text-decoration: none;
+          font-weight: bold;
+          transition: background-color 0.3s ease, transform 0.2s;
+        }
+    
+        .sign-up-button:hover {
+          background-color: var(--dark);
+          transform: scale(1.05);
+        }
+        /* Page Styles */
+        .container {
+          max-width: 960px;
+          margin: auto;
+          padding: 40px 20px;
+          animation: fadeIn 1s ease;
+        }
+    
+        h1 {
+          text-align: center;
+          font-size: 2.8rem;
+          color: var(--green);
+          margin-bottom: 30px;
+        }
+    
+        .tabs {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          margin-bottom: 30px;
+        }
+    
+        .tab-button {
+          padding: 12px 28px;
+          background: var(--blue);
+          color: white;
+          border: none;
+          border-radius: 25px;
+          font-weight: bold;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background 0.3s ease, transform 0.2s;
+        }
+    
+        .tab-button:hover {
+          background: var(--green);
+          transform: scale(1.05);
+        }
+    
+        .tab-button.active {
+          background: linear-gradient(45deg, var(--green), var(--blue));
+        }
+    
+        .tab-content {
+          display: none;
+          animation: slideIn 0.5s ease;
+        }
+    
+        .tab-content.active {
+          display: block;
+        }
+    
+        .post-card {
+          background: white;
+          display: flex;
+          flex-direction: row;
+          border-radius: 14px;
+          overflow: hidden;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+          margin-bottom: 24px;
+          text-decoration: none;
+          color: inherit;
+          transition: transform 0.3s ease;
+        }
+    
+        .post-card:hover {
+          transform: scale(1.02);
+        }
+    
+        .post-image {
+          flex: 1.2;
+          overflow: hidden;
+        }
+    
+        .post-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+    
+        .post-content {
+          flex: 2;
+          padding: 20px;
+        }
+    
+        .post-content h3 {
+          margin-top: 0;
+          color: var(--blue);
+          font-size: 1.4rem;
+        }
+    
+        .meta {
+          margin-top: 10px;
+          font-size: 0.9rem;
+          color: #555;
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
+    
+        .meta span {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+    
+        .meta i {
+          color: var(--green);
+        }
+    
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+    
+        @keyframes slideIn {
+          from { opacity: 0; transform: translateX(-20px); }
+          to { opacity: 1; transform: translateX(0); }
+        }
+    
+        @media (max-width: 768px) {
+          .post-card {
+            flex-direction: column;
+          }
+        }
+      </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        
+ <!-- Navbar Start -->
+ <div class="container-fluid nav-bar bg-transparent">
+  <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+      <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+          <div class="icon p-2 me-2">
+              <img class="img-fluid" src="img/logo.png" alt="Icon" style="width: 30px; height: 30px;">
+          </div>
+          <h1 class="m-0 text-primary">QuantumSKY</h1>
+      </a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="about.html" class="nav-item nav-link">About</a>
+              <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Content</a>
+                  <div class="dropdown-menu rounded-0 m-0">
+                      <a href="writtinglist.html" class="dropdown-item">Writtings</a>
+                      <a href="tutoriallist.html" class="dropdown-item active">Tutorial</a>
+                      <a href="services.html" class="dropdown-item">Services</a>
+                  </div>
+              </div>
+              <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                  <div class="dropdown-menu rounded-0 m-0">
+                      <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                      <a href="privacy.html" class="dropdown-item">Privacy Policy</a>
+                      <a href="terms.html" class="dropdown-item">Terms and Conditions</a>
+                  </div>
+              </div>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+          <a href="signup.html" class="btn btn-primary px-3 d-none d-lg-flex">Sign Up</a>
+      </div>
+  </nav>
+</div>
+<!-- Navbar End -->
+
+   
+    </div>
+
+    <!-- Bootstrap JS (add these just before </body>) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="container">
+        <h1>QuantumSKY Tutorials</h1>
+      
+        <div class="tabs">
+          <button class="tab-button active" onclick="switchTab('physics')">Quantum Physics</button>
+          <button class="tab-button" onclick="switchTab('computing')">Quantum Computing</button>
+          <button class="tab-button" onclick="switchTab('programming')">Quantum Programming</button>
+      </div>
+      
+        <!-- Quantum Physics -->
+        <div id="physics" class="tab-content active">
+          <a href="https://medium.com/my-first-blog" target="_blank" class="post-card">
+            <div class="post-image">
+              <img src="img/physics1.jpg" alt=" Image">
+            </div>
+            <div class="post-content">
+              <h3>Quantum Physics for Beginners – Why Reality Isn’t What It Seems</h3>
+              <p>Step into the mind-bending world of quantum physics! In this beginner-friendly episode, we’ll explore how particles can be waves, how things exist in multiple states at once (superposition), and what that means for how we understand reality. Ideal for curious minds with no prior background—this is the perfect starting point for your quantum journey.
+
+              </p>
+              <div class="meta">
+                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
+              </div>
+            </div>
+          </a>
+      
+          <a href="https://blogger.com/nature-walk" target="_blank" class="post-card">
+            <div class="post-image">
+              <img src="img/physics2.jpg" alt="Nature Blog">
+            </div>
+            <div class="post-content">
+              <h3>The Double-Slit Experiment Explained – The Mystery That Shook Physics</h3>
+              <p> What if just watching something changed its behavior? This tutorial dives deep into the famous double-slit experiment, revealing how observing quantum particles collapses their wave function. Using animations and clear language, we’ll show how this simple experiment continues to challenge everything we know about space, time, and consciousness.</p>
+              <div class="meta">
+               
+                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+<!-- Quantum Computing -->
+<div id="computing" class="tab-content active">
+  <a href="https://medium.com/my-first-blog" target="_blank" class="post-card">
+    <div class="post-image">
+      <img src="img/bit.jpg" alt="Blog Image">
+    </div>
+    <div class="post-content">
+      <h3>What Is Quantum Computing? – Explained Like You’re 12</h3>
+      <p>Classical computers use bits. Quantum computers use qubits. But what does that really mean? In this super-clear and animated tutorial, we’ll break down the core idea of quantum computing using fun analogies, visual storytelling, and real-world examples. Ideal for absolute beginners who want to finally “get it.”
+
+      </p>
+      <div class="meta">
+        
+        <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://blogger.com/nature-walk" target="_blank" class="post-card">
+    <div class="post-image">
+      <img src="img/entanglement.jpg" alt="Nature Blog">
+    </div>
+    <div class="post-content">
+      <h3>How Qubits Work – Superposition, Entanglement, and Quantum Gates</h3>
+      <p>Take a closer look at the magical building blocks of quantum computers: qubits. This episode explains how superposition lets a qubit be in multiple states at once, how entanglement links qubits across space, and how quantum gates perform computations in ways classical logic never could. With visuals and real-life metaphors, this is the perfect foundation for understanding real quantum algorithms.</p>
+      <div class="meta">
+       
+        <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+        <!-- Quantum Programming -->
+        <div id="programming" class="tab-content">
+          <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
+            <div class="post-image">
+              <img src="img/pro1.jpg" alt="Quantum Article">
+            </div>
+            <div class="post-content">
+              <h3>Quantum Programming 101 – Your First Quantum Code with Qiskit</h3>
+              <p>Ready to write your first quantum program? In this hands-on tutorial, we’ll walk through installing Qiskit, setting up your environment, and writing a simple quantum circuit that uses superposition and measurement. No advanced math required—just follow along and run real quantum code on IBM’s quantum simulator!</p>
+              <div class="meta">
+               
+                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
+              </div>
+            </div>
+          </a>
+      
+          <a href="https://techjournal.com/ai-business" target="_blank" class="post-card">
+            <div class="post-image">
+              <img src="img/pro2.jpg" alt="AI Article">
+            </div>
+            <div class="post-content">
+              <h3>Build a Quantum Teleportation Program – Step-by-Step with Q#</h3>
+              <p>Quantum teleportation sounds like sci-fi, but it’s real—and you can code it. In this beginner-to-intermediate Q# tutorial, we’ll guide you through writing a program that teleports the state of one qubit to another using entanglement. Learn the syntax, logic, and power of Q# through this incredible experiment made executable!
+
+              </p>
+              <div class="meta">
+               
+                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Floating Particles Background CSS -->
+  <style>
+    :root {
+      --qs-green: #34A853;
+      --qs-sky:   #00BFFF;
+      --qs-dark:  #0F1C4D;
+    }
+
+    /* full-screen fixed container behind content */
+    .bg-particles {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+      /* no z-index at all—so it paints first if you place it first in the body */
+    }
+
+    .bg-particles span {
+      /* controls per-particle timing & size */
+      --duration: calc(10s + var(--i) * 3s);
+      --delay:    calc(var(--d) * 1s);
+
+      position: absolute;
+      bottom: -var(--size)px;
+      left:   calc(var(--x));
+
+      width:  var(--size)px;
+      height: var(--size)px;
+      border-radius: 50%;
+
+      /* cycle colors for variety */
+      background: var(--qs-sky);
+      opacity: 0.15;
+      animation: rise var(--duration) linear infinite var(--delay);
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.1;
+      }
+      50% {
+        transform: translateY(-60vh) scale(1);
+        opacity: 0.15;
+      }
+      90% {
+        opacity: 0.1;
+      }
+      100% {
+        transform: translateY(-120vh) scale(1.2);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating Particles Background -->
+  <div class="bg-particles">
+    <!-- tweak/add/remove spans as you like -->
+    <span style="--i:1; --size: 8;  --x:  5; --d: 0; background: var(--qs-green);"></span>
+    <span style="--i:2; --size:12;  --x: 20; --d: 2; background: var(--qs-sky);"></span>
+    <span style="--i:3; --size: 6;  --x: 35; --d: 4; background: var(--qs-dark);"></span>
+    <span style="--i:4; --size:10;  --x: 50; --d: 1; background: var(--qs-sky);"></span>
+    <span style="--i:5; --size:14;  --x: 65; --d: 3; background: var(--qs-green);"></span>
+    <span style="--i:6; --size: 9;  --x: 80; --d: 5; background: var(--qs-dark);"></span>
+  </div>
+
+  <!-- Your existing content goes here -->
+  <header>…</header>
+  <main>…</main>
+  <footer>…</footer>
+</body>
+</html>
+
+
+      <script>
+        function switchTab(tabId) {
+          document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+          document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+      
+          document.querySelector(`[onclick="switchTab('${tabId}')"]`).classList.add('active');
+          document.getElementById(tabId).classList.add('active');
+        }
+      </script>
+</body>
+</html>
