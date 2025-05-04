@@ -2,6 +2,40 @@
 <html lang="en">
 
 <head>
+    
+
+   
+      <!-- …other head tags… -->
+    
+      <script>
+        (function() {
+          // 1. Disable programmatic scrolls
+          const noop = function() {};
+          window.scrollTo     = noop;
+          window.scrollBy     = noop;
+          Element.prototype.scrollIntoView = noop;
+    
+          // 2. Prevent autofocus from jumping
+          window.addEventListener('focusin', e => {
+            if (e.target.hasAttribute('autofocus')) {
+              e.preventDefault();
+              e.target.removeAttribute('autofocus');
+            }
+          });
+    
+          // 3. Stop hash‑change auto‑scrolls
+          window.addEventListener('hashchange', e => e.preventDefault());
+    
+          // 4. Force “natural” scroll behavior
+          const style = document.createElement('style');
+          style.textContent = `
+            html { scroll-behavior: auto !important; }
+          `;
+          document.head.appendChild(style);
+        })();
+      </script>
+    
+
     <meta charset="utf-8">
     <title>QuantumSKY</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -29,6 +63,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    
     </head>
 
 <body>
