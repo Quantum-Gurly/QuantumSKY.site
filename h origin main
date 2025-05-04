@@ -1,0 +1,61 @@
+[33mcommit 3b9734ae39c4e61d60641c5143466df65aae1161[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Quantum-Gurly <quantumsky.qs@gmail.com>
+Date:   Thu May 1 21:59:13 2025 +0300
+
+    Update privacy policy
+
+[33mcommit 380bfdf81f93775830bff8bb3655fb2556a36281[m
+Author: Quantum-Gurly <quantumsky.qs@gmail.com>
+Date:   Thu May 1 21:57:18 2025 +0300
+
+    Update privacy policy
+
+[33mcommit 8a547c91ca65c862d3c108612b57c1dd270b934e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Quantum-Gurly <quantumsky.qs@gmail.com>
+Date:   Wed Apr 30 16:11:01 2025 +0300
+
+    Add Open Graph & Twitter Card meta tags for social sharing
+
+[33mcommit ba41c6cc400aa662a2103aeac99f48cc5a78fbcb[m
+Author: Quantum-Gurly <quantumsky.qs@gmail.com>
+Date:   Wed Apr 30 14:30:01 2025 +0300
+
+    Add robots.txt for SEO
+
+[33mcommit 918fcc95d2639c3397bc0e6049cfe986f1027ea5[m
+Author: Quantum-Gurly <maureenkirigowanjohi@gmail.com>
+Date:   Wed Apr 30 13:59:28 2025 +0300
+
+    Update sitemap.xml
+
+[33mcommit 975932adec6ed3b89b04e1d6c1bfe182755c671f[m
+Author: Quantum-Gurly <maureenkirigowanjohi@gmail.com>
+Date:   Wed Apr 30 13:56:44 2025 +0300
+
+    Update robots.txt
+
+[33mcommit 934578736842d2e375e16a77ba6a4644bc073a65[m
+Author: Quantum-Gurly <maureenkirigowanjohi@gmail.com>
+Date:   Wed Apr 30 13:36:34 2025 +0300
+
+    Create sitemap.xml
+
+[33mcommit 2ae2862a76e69f3c2a3b5762bc69ea7085e1746f[m
+Author: Quantum-Gurly <maureenkirigowanjohi@gmail.com>
+Date:   Wed Apr 30 12:34:27 2025 +0300
+
+    Create robots.txt
+    
+    Add robots.txt to allow crawling
+
+[33mcommit 8bbd6985a26e81f92ffc111a833bbc551508f44a[m
+Author: Quantum-Gurly <maureenkirigowanjohi@gmail.com>
+Date:   Tue Apr 29 20:06:48 2025 +0300
+
+    Create CNAME
+
+[33mcommit 43e5b88cdac549b67558856a28bf9374cde48718[m
+Author: Quantum-Gurly <quantumsky.qs@gmail.com>
+Date:   Tue Apr 29 19:09:07 2025 +0300
+
+    Initial commit
