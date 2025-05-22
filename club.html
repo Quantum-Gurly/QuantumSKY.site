@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>QuantumSKY</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+ 
+        
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="Quantum Sky – Quantum Computing Insights" />
+    <meta property="og:description" content="Explore the future of technology with Quantum Sky – your source for quantum computing articles and cloud-based solutions." />
+    <meta property="og:url"         content="https://quantumsky.cloud" />
+    <meta property="og:image"       content="https://quantumsky.cloud/img/og-image.png" />
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="Quantum Sky – Quantum Computing Insights" />
+    <meta name="twitter:description" content="Explore the future of technology with Quantum Sky – your source for quantum computing articles and cloud-based solutions." />
+    <meta name="twitter:image"       content="https://quantumsky.cloud/img/og-image.png" />
+    <!-- ────────────────────────────────────────────────────────────── -->
+  
+    <!-- Favicon, fonts, CSS links… -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth; /* This is okay, but test with or without it */
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+    
+
+
+<!-- ======= HERO SECTION WITH IMAGE BACKGROUND ======= -->
+<section id="hero">
+    <style>
+      #hero {
+        height: 100vh;
+        width: 100%;
+        background-image: url(img/1.webp); /* 🔁 Replace with your image URL */
+        background-repeat: no-repeat;
+  background-size:cover;      /* show entire image */
+  background-position:top center;
+   
+       
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #A3DFFF;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow: hidden;
+      }
+  
+      #hero::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        
+        z-index: 0;
+      }
+  
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        animation: fadeInUp 1.2s ease-out;
+        padding: 0 20px;
+      }
+  
+      .hero-title {
+        font-size: 3.5rem;
+        color: #00BFFF;
+        text-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
+        margin-bottom: 20px;
+        margin-top: 40px;
+      }
+  
+      .hero-subtitle {
+        font-size: 1.5rem;
+        max-width: 600px;
+        margin: 0 auto 30px;
+        color: #89CFF0;
+      }
+  
+      .hero-button {
+        display: inline-block;
+        padding: 12px 28px;
+        font-size: 1.1rem;
+        color: #001F3F;
+        background-color: #00BFFF;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.3s ease;
+      }
+  
+      .hero-button:hover {
+        background-color: #009ACD;
+        transform: scale(1.05);
+      }
+  
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+  
+      @media (max-width: 768px) {
+        .hero-title {
+          font-size: 2.2rem;
+        }
+        .hero-subtitle {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+  
+    <div class="hero-content">
+      <h1 class="hero-title">Quantum Sky Awaits</h1>
+      <p class="hero-subtitle">Join the revolution where African brilliance meets quantum innovation. Let’s shape the future, one qubit at a time.</p>
+      <a href="signup.html" class="hero-button">Become a Member</a>
+    </div>
+  </section>
+  
+
+<!-- ====== Tech Grid “Glitch” Divider ====== -->
+<div class="glitch-divider">
+  <div class="glitch-lines"></div>
+</div>
+
+<style>
+  .glitch-divider {
+    position: relative;
+    height: 60px;            /* Adjust thickness */
+    background: #0F1C4D;      /* Dark-blue base */
+    overflow: hidden;
+  }
+
+  .glitch-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      rgba(0,191,255,0.1) 0px,
+      rgba(0,191,255,0.1) 2px,
+      transparent 2px,
+      transparent 4px
+    );
+    animation: glitchScan 1.8s infinite steps(1);
+  }
+
+  @keyframes glitchScan {
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(5px); /* small jitter */ }
+    50%  { transform: translateY(0); }
+    75%  { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+</style>
+
+
+<!-- ====== Futuristic Pulse & Particles Divider ====== -->
+<div class="pulse-divider">
+  <div class="pulse-line"></div>
+  <div class="pulse-particles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+</div>
+
+<style>
+  .pulse-divider {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, #0F1C4D, #00BFFF, #0F1C4D);
+    background-size: 300% 100%;
+    animation: gradientShift 6s ease-in-out infinite;
+    overflow: hidden;
+  }
+
+  .pulse-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(0, 255, 255, 0.8);
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.4);
+    transform: translateY(-50%);
+    animation: pulseGlow 1.5s infinite ease-in-out;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 24px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 0.8);
+    }
+  }
+
+  @keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  .pulse-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .pulse-particles span {
+    position: absolute;
+    bottom: 0;
+    width: 6px;
+    height: 6px;
+    background: #00FFFF;
+    border-radius: 50%;
+    animation: floatUp 4s infinite ease-in;
+    opacity: 0.6;
+  }
+
+  .pulse-particles span:nth-child(1)  { left: 10%; animation-delay: 0s; }
+  .pulse-particles span:nth-child(2)  { left: 20%; animation-delay: 0.5s; }
+  .pulse-particles span:nth-child(3)  { left: 30%; animation-delay: 1s; }
+  .pulse-particles span:nth-child(4)  { left: 40%; animation-delay: 1.5s; }
+  .pulse-particles span:nth-child(5)  { left: 50%; animation-delay: 2s; }
+  .pulse-particles span:nth-child(6)  { left: 60%; animation-delay: 2.5s; }
+  .pulse-particles span:nth-child(7)  { left: 70%; animation-delay: 3s; }
+  .pulse-particles span:nth-child(8)  { left: 80%; animation-delay: 3.5s; }
+  .pulse-particles span:nth-child(9)  { left: 90%; animation-delay: 4s; }
+  .pulse-particles span:nth-child(10) { left: 95%; animation-delay: 4.5s; }
+
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0.6;
+    }
+    50% {
+      transform: translateY(-40px) scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-80px) scale(0.8);
+      opacity: 0;
+    }
+  }
+</style>
+
+
+<!-- ====== Zigzag Tech Divider ====== -->
+<div class="zigzag-divider">
+  <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+    <path d="M0,50 L150,80 L300,20 L450,80 L600,20 L750,80 L900,20 L1050,80 L1200,50 V100 H0 Z" fill="#0F1C4D">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite"
+        values="
+          M0,50 L150,80 L300,20 L450,80 L600,20 L750,80 L900,20 L1050,80 L1200,50 V100 H0 Z;
+          M0,60 L150,30 L300,70 L450,30 L600,70 L750,30 L900,70 L1050,30 L1200,60 V100 H0 Z;
+          M0,50 L150,80 L300,20 L450,80 L600,20 L750,80 L900,20 L1050,80 L1200,50 V100 H0 Z" />
+    </path>
+  </svg>
+</div>
+
+<style>
+  .zigzag-divider {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #0F1C4D, #00BFFF, #34A853);
+    animation: backgroundShift 8s linear infinite;
+  }
+
+  .zigzag-divider svg {
+    display: block;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  @keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>
+
+
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>QuantumSky Club – About</title>
+        
+          <!-- AOS (Animate On Scroll) CSS -->
+          <link
+            href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+            rel="stylesheet"
+          />
+        
+          <!-- Swiper.js CSS (for carousel) -->
+          <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+          />
+        
+          <!-- Font Awesome (for feature icons and speaker icon) -->
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-..."
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+          />
+        
+          <style>
+            /* -----------------------------------------------
+               RESET & BASE STYLES
+            ----------------------------------------------- */
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              
+            }
+            html {
+              scroll-behavior: smooth;
+            }
+            body {
+              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+              background-color: #0b0b17;
+              color: #06080b; /* Body text made pure white for maximum contrast */
+              line-height: 1.6;
+              overflow-x: hidden;
+              html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto; /* allow content to determine height */
+  overflow-x: hidden;
+  scroll-behavior: smooth; /* for smooth scrolling if anchor links exist */
+}
+
+            }
+             
+            a {
+              color: inherit;
+              text-decoration: none;
+            }
+            img {
+              max-width: 100%;
+              display: block;
+            }
+        
+            /* -----------------------------------------------
+               PARTICLE BACKGROUND
+            ----------------------------------------------- */
+            #particle-bg {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100vh;
+              z-index: -1;
+              background: #0b0b17;
+            }
+        
+            /* -----------------------------------------------
+               CONTAINER
+            ----------------------------------------------- */
+            .about-container {
+              position: relative;
+              padding: 4rem 1rem;
+              max-width: 1200px;
+              margin: 0 auto;
+              
+            }
+        
+            /* -----------------------------------------------
+               HERO QUOTE (H2)
+            ----------------------------------------------- */
+            .hero-quote {
+              font-size: 1.8rem;
+              text-align: center;
+              margin-bottom: 2rem;
+              color: #3474a8; /* Changed to green */
+              text-shadow: 0 0 12px rgba(52, 168, 83, 0.8);
+            }
+            @media (min-width: 768px) {
+              .hero-quote {
+                font-size: 2.4rem;
+              }
+            }
+        
+            /* -----------------------------------------------
+               INTRO PARAGRAPH
+            ----------------------------------------------- */
+            .intro-text {
+              font-size: 1.1rem;
+              max-width: 820px;
+              margin: 0 auto 3rem;
+              text-align: center;
+              color: #0c1117; /* Made pure white */
+            }
+            @media (min-width: 768px) {
+              .intro-text {
+                font-size: 1.25rem;
+              }
+            }
+        
+            /* -----------------------------------------------
+               FEATURES (“Why It’s Lit”)
+            ----------------------------------------------- */
+            .features-section {
+              margin-bottom: 3rem;
+            }
+            .features-list {
+              list-style: none;
+              max-width: 820px;
+              margin: 0 auto;
+              display: grid;
+              grid-template-columns: 1fr;
+              gap: 1.5rem;
+            }
+            @media (min-width: 768px) {
+              .features-list {
+                grid-template-columns: repeat(3, 1fr);
+              }
+            }
+            .features-list li {
+              background: rgba(255, 255, 255, 0.05);
+              padding: 1.5rem 1rem 1.5rem 3rem;
+              border-radius: 10px;
+              position: relative;
+              overflow: hidden;
+              cursor: default;
+              transition: background 0.3s ease, transform 0.3s ease;
+            }
+            .features-list li:hover {
+              background: rgba(52, 168, 83, 0.12); /* Light green hover */
+              transform: translateY(-4px);
+            }
+            .features-list i.feature-icon {
+              position: absolute;
+              left: 1rem;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 1.5rem;
+              color: rgba(0,191,255,0.7); /* Green icon */
+            }
+            .features-list span {
+              display: block;
+              font-size: 1rem;
+              color: #0e0a0a; /* Pure white text */
+            }
+            @media (min-width: 768px) {
+              .features-list li {
+                padding: 1.75rem 1rem 1.75rem 3.5rem;
+              }
+              .features-list span {
+                font-size: 1.05rem;
+              }
+            }
+        
+            /* -----------------------------------------------
+               VIBE BLOCKQUOTE
+            ----------------------------------------------- */
+            .vibe-blockquote {
+              max-width: 820px;
+              margin: 4rem auto;
+              padding: 1.75rem 2.5rem;
+              border-radius: 12px;
+              font-size: 1.2rem;
+              text-align: center;
+              color: #ffffff;
+              background-color:rgba(0,191,255,0.7) ;
+              box-shadow: 0 0 25px rgba(52, 168, 83, 0.4);
+              animation: vibeColorShift 6s infinite alternate;
+            }
+            @keyframes vibeColorShift {
+              0% {
+                background-color: #0f1c4d;
+              }
+              100% {
+                background-color: #34A853; /* Shift to green */
+              }
+            }
+            @media (min-width: 768px) {
+              .vibe-blockquote {
+                font-size: 1.4rem;
+              }
+            }
+        
+            /* -----------------------------------------------
+               ACTIVITIES (“What You’ll Do”)
+            ----------------------------------------------- */
+            .activities {
+              max-width: 820px;
+              margin: 0 auto 4rem;
+              display: grid;
+              grid-template-columns: 1fr;
+              gap: 1.5rem;
+            }
+            @media (min-width: 768px) {
+              .activities {
+                grid-template-columns: repeat(2, 1fr);
+              }
+            }
+            .activity-item {
+              background: rgba(255, 255, 255, 0.05);
+              padding: 1.5rem;
+              border-radius: 10px;
+              position: relative;
+              overflow: hidden;
+              transition: background 0.3s ease, transform 0.3s ease;
+              display: flex;
+              align-items: flex-start;
+              gap: 1rem;
+            }
+            .activity-item:hover {
+              background: rgba(52, 168, 83, 0.12); /* Light green hover */
+              transform: translateY(-3px);
+            }
+            .activity-item h3 {
+              font-size: 1.2rem;
+              color: rgba(0,191,255,0.7); /* Green headings */
+              margin-bottom: 0.5rem;
+            }
+            .activity-item p {
+              font-size: 1rem;
+              color: #0f0c0c; /* Pure white body text */
+            }
+            .lottie-icon {
+              width: 120px;  /* Very, very big animated icons */
+              height: 120px; /* Increased from 50px to 120px */
+              flex-shrink: 0;
+            }
+        
+            /* -----------------------------------------------
+               SPEAKER ICON (Font Awesome) WITH PULSE
+            ----------------------------------------------- */
+            .speaker-icon {
+              font-size: 120px; /* Very large speaker icon */
+              color: rgba(0,191,255,0.7);   /* Green color */
+              animation: pulse 2s infinite;
+            }
+            @keyframes pulse {
+              0% {
+                transform: scale(1);
+                opacity: 1;
+              }
+              50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+              }
+              100% {
+                transform: scale(1);
+                opacity: 1;
+              }
+            }
+        
+            /* -----------------------------------------------
+               CAROUSEL (Member Photos)
+            ----------------------------------------------- */
+            .swiper-container {
+              width: 100%;
+              max-width: 900px;
+              margin: 2rem auto 6rem;
+            }
+            .swiper-slide {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 300px;
+              perspective: 1200px;
+            }
+            .member-card {
+              width: 80%;
+              height: 80%;
+              background: #14141b;
+              border-radius: 12px;
+              transform-style: preserve-3d;
+              transition: transform 0.6s;
+              cursor: pointer;
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            }
+            .member-card.flipped {
+              transform: rotateY(180deg);
+            }
+            .member-card .card-face {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+              border-radius: 12px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+            .member-card .card-front {
+              background-size: cover;
+              background-position: center;
+            }
+            .member-card .card-back {
+              background: #1e1e27;
+              color: #0c0909;
+              transform: rotateY(180deg);
+              padding: 1rem;
+              text-align: center;
+            }
+            .member-card .card-back blockquote {
+              font-style: italic;
+              font-size: 1rem;
+              line-height: 1.4;
+            }
+        
+            /* -----------------------------------------------
+               MEDIA QUERIES
+            ----------------------------------------------- */
+            @media (max-width: 500px) {
+              .hero-quote {
+                font-size: 1.6rem;
+              }
+              .intro-text {
+                font-size: 1rem;
+              }
+              .features-list {
+                gap: 1rem;
+              }
+              .features-list li {
+                padding: 1.25rem 1rem 1.25rem 2.5rem;
+              }
+              .features-list span {
+                font-size: 0.95rem;
+              }
+              .vibe-blockquote {
+                font-size: 1.1rem;
+                padding: 1.25rem 1.75rem;
+              }
+              .activities {
+                gap: 1rem;
+              }
+              .activity-item {
+                padding: 1.25rem;
+              }
+              .activity-item h3 {
+                font-size: 1.1rem;
+              }
+              .activity-item p {
+                font-size: 0.95rem;
+              }
+              .lottie-icon,
+              .speaker-icon {
+                width: 100px;
+                height: 100px;
+                font-size: 100px;
+              }
+            }
+          </style>
+        </head>
+        
+        <body>
+          <!-- Particle Background Container -->
+          <div id="particle-bg"></div>
+        
+          <!-- About Section Container -->
+          <section class="about-container">
+            <!-- Hero Quote (H2) -->
+            <h2
+              class="hero-quote"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              “Ever wondered what it feels like to ride the wave of the future? Join us
+              at QuantumSky Club—where the coolest quantum minds on campus come
+              together to learn, innovate, and have a blast!”
+            </h2>
+        
+            <!-- Intro Paragraph -->
+            <p
+              class="intro-text"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              QuantumSky Club is your launchpad into the wild, exciting world of quantum
+              tech. Think of us as the ultimate hangout for anyone curious about qubits,
+              quantum algorithms, or simply wanting to geek out with fellow enthusiasts.
+              Whether you’re a total newbie still trying to wrap your brain around
+              “superposition” 😅 or you’re already building mini quantum circuits in your
+              dorm room, we’ve got your back.
+            </p>
+        
+            <!-- “Why It’s Lit” Features -->
+            <div class="features-section">
+              <ul class="features-list">
+                <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+                  <i class="feature-icon fa-solid fa-microchip"></i>
+                  <span>
+                    Hands-on workshops and peer-led sessions that feel more like campus
+                    hackathons than a lecture hall snooze.
+                  </span>
+                </li>
+                <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">
+                  <i class="feature-icon fa-solid fa-users"></i>
+                  <span>
+                    Jam sessions with seniors, grad students, and quantum pros who spill
+                    the latest breakthroughs—no stuffy office vibes here.
+                  </span>
+                </li>
+                <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="700">
+                  <i class="feature-icon fa-solid fa-code"></i>
+                  <span>
+                    Real-world mini-projects: build a quantum game, simulate an encryption
+                    puzzle, or flex your coding skills in our monthly QuantumHack battles.
+                  </span>
+                </li>
+              </ul>
+            </div>
+        
+            <!-- “Our Vibe” Blockquote -->
+            <blockquote
+              class="vibe-blockquote"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="900"
+            >
+              “We’re not just nerding out—we’re making waves.”
+            </blockquote>
+        
+            <!-- “What You’ll Actually Do” Activities -->
+            <div class="activities">
+              <!-- Interactive Workshops -->
+              <div
+                class="activity-item"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
+                <div id="workshop-confetti-trigger">
+                  <div id="lottie-workshop" class="lottie-icon"></div>
+                  <div>
+                    <h3>Jump into Interactive Workshops</h3>
+                    <p>
+                      Ever built a quantum circuit? We’ll walk you step by step—and
+                      celebrate with confetti when it runs correctly!
+                    </p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Hack Nights & Brainstorms -->
+              <div
+                class="activity-item"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="500"
+              >
+                <div>
+                  <div id="lottie-hacknight" class="lottie-icon"></div>
+                  <div>
+                    <h3>Hack Nights & Brainstorms</h3>
+                    <p>
+                      Monthly “QuantumHack” challenges: build a random-number generator
+                      or crack a mock quantum cipher. Prizes, swag, and serious bragging
+                      rights await.
+                    </p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Chill-and-Code Sessions -->
+              <div
+                class="activity-item"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="700"
+              >
+                <div>
+                  <div id="lottie-chillcode" class="lottie-icon"></div>
+                  <div>
+                    <h3>Chill-and-Code Sessions</h3>
+                    <p>
+                      Grab a coffee, pull up a beanbag, and code alongside friends—no
+                      strict agenda, just collaborative problem solving and quantum
+                      memes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Speaker Showcases (Font Awesome icon) -->
+              <div
+                class="activity-item"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="900"
+              >
+                <div>
+                  <i class="speaker-icon fa-solid fa-microphone"></i>
+                  <div>
+                    <h3>Speaker Showcases</h3>
+                    <p>
+                      Guest appearances (sometimes via hologram!) from startup founders
+                      in quantum cryptography to undergrad researchers who built their
+                      own quantum key distribution in their dorm.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Member Photos Carousel -->
+            <div
+              class="swiper-container"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay="1100"
+            >
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                  <div class="member-card" onclick="this.classList.toggle('flipped')">
+                    <div
+                      class="card-face card-front"
+                      style="background-image: url('img/download.webp')"
+                    ></div>
+                    <div class="card-face card-back">
+                      <blockquote>
+                        “QuantumSky Club changed my major!”<br />
+                        — Amina K., Nairobi Campus
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                  <div class="member-card" onclick="this.classList.toggle('flipped')">
+                    <div
+                      class="card-face card-front"
+                      style="background-image: url('img/OIP.webp');"
+                    ></div>
+                    <div class="card-face card-back">
+                      <blockquote>
+                        “I built my first quantum simulator here. Best vibes ever!”<br />
+                        — John M., Tech University
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                  <div class="member-card" onclick="this.classList.toggle('flipped')">
+                    <div
+                      class="card-face card-front"
+                      style="background-image: url('img/31.webp');"
+                    ></div>
+                    <div class="card-face card-back">
+                      <blockquote>
+                        “The hack battles are addictive. I learned more in one night
+                        than a semester!”<br />
+                        — Sarah L., Quantum Enthusiast
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Pagination & Navigation -->
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </section>
+        
+          <!-- AOS JS -->
+          <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+          <!-- particles.js -->
+          <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+          <!-- Lottie-web -->
+          <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.10.0/build/player/lottie.min.js"></script>
+          <!-- canvas-confetti -->
+          <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+          <!-- Swiper.js -->
+          <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        
+          <script>
+            // ----------------------------------------
+            // Initialize AOS (Animate On Scroll)
+            // ----------------------------------------
+            AOS.init({ once: true, offset: 120 });
+        
+            // ----------------------------------------
+            // Initialize Particles.js Background
+            // ----------------------------------------
+            particlesJS("particle-bg", {
+              particles: {
+                number: { value: 60, density: { enable: true, value_area: 700 } },
+                color: { value: "#34A853" }, // Green particle color
+                shape: { type: "circle" },
+                opacity: { value: 0.4, anim: { enable: false } },
+                size: { value: 3, random: true, anim: { enable: false } },
+                line_linked: {
+                  enable: true,
+                  distance: 140,
+                  color: "#34A853",
+                  opacity: 0.25,
+                  width: 1,
+                },
+                move: { enable: true, speed: 2, out_mode: "out" },
+              },
+              interactivity: {
+                detect_on: "canvas",
+                events: {
+                  onhover: { enable: true, mode: "grab" },
+                  onclick: { enable: true, mode: "push" },
+                  resize: true,
+                },
+                modes: {
+                  grab: { distance: 150, line_linked: { opacity: 0.5 } },
+                  push: { particles_nb: 4 },
+                },
+              },
+              retina_detect: true,
+            });
+        
+            // ----------------------------------------
+            // Initialize Lottie Animations (large icons)
+            // ----------------------------------------
+            const loadLottie = (containerId, path) => {
+              lottie.loadAnimation({
+                container: document.getElementById(containerId),
+                renderer: "svg",
+                loop: true,
+                autoplay: true,
+                path,
+              });
+            };
+            loadLottie(
+              "lottie-workshop",
+              "https://assets2.lottiefiles.com/packages/lf20_1pxqjqps.json"
+            );
+            loadLottie(
+              "lottie-hacknight",
+              "https://assets9.lottiefiles.com/packages/lf20_tfb3estd.json"
+            );
+            loadLottie(
+              "lottie-chillcode",
+              "https://assets1.lottiefiles.com/packages/lf20_kyu7xb1v.json"
+            );
+            // The speaker icon is Font Awesome, so no Lottie needed here.
+        
+            // ----------------------------------------
+            // Confetti Trigger on Workshop Heading
+            // ----------------------------------------
+            const workshopTrigger = document.getElementById("workshop-confetti-trigger");
+            const observerOptions = { threshold: 0.5 };
+            const confettiObserver = new IntersectionObserver((entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  confetti({
+                    particleCount: 120,
+                    spread: 80,
+                    origin: { y: 0.6 },
+                  });
+                  confettiObserver.unobserve(entry.target);
+                }
+              });
+            }, observerOptions);
+            confettiObserver.observe(workshopTrigger);
+        
+            // ----------------------------------------
+            // Initialize Swiper Carousel
+            // ----------------------------------------
+            new Swiper(".swiper-container", {
+              loop: true,
+              effect: "slide",
+              autoplay: { delay: 3500, disableOnInteraction: false },
+              pagination: { el: ".swiper-pagination", clickable: true },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              slidesPerView: 1,
+              spaceBetween: 20,
+              breakpoints: {
+                640: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              },
+            });
+          </script>
+        </body>
+        </html>
+          
+        
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>QuantumSky Club – About</title>
+          <style>
+            /* ---------- Root Styles & Fonts ---------- */
+            * {
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+            }
+            body {
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              color: #ffffff;
+              line-height: 1.6;
+              background: linear-gradient(-45deg, #0F1C4D, #000000, #0F1C4D, #000000);
+              background-size: 400% 400%;
+              animation: bgAnimation 20s ease infinite;
+            }
+            @keyframes bgAnimation {
+              0% { background-position: 0% 50%; }
+              50% { background-position: 100% 50%; }
+              100% { background-position: 0% 50%; }
+            }
+        
+            /* ---------- About Section Container ---------- */
+            #about {
+              max-width: 800px;
+              margin: 80px auto;
+              padding: 40px;
+              position: relative;
+              overflow: hidden;
+              background: rgba(15, 28, 77, 0.85);
+              border-radius: 12px;
+              box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            }
+        
+            /* ---------- Headings & Text ---------- */
+            #about h2 {
+              font-size: 2.5rem;
+              text-align: center;
+              margin-bottom: 20px;
+              color: #00BFFF; /* Sky blue accent */
+              text-shadow: 0 0 8px #00BFFF;
+            }
+            #about p {
+              font-size: 1.1rem;
+              margin-bottom: 20px;
+              opacity: 0.95;
+            }
+        
+            /* ---------- Buzzword Highlight ---------- */
+            .buzzword {
+              position: relative;
+              display: inline-block;
+              color: #FFFFFF;
+              cursor: pointer;
+              transition: color 0.3s ease, text-shadow 0.3s ease;
+            }
+            .buzzword:hover {
+              color: #00BFFF;
+              text-shadow: 0 0 8px #00BFFF, 0 0 16px rgba(0, 191, 255, 0.6);
+              animation: buzz 0.4s ease;
+            }
+            @keyframes buzz {
+              0% { transform: scale(1); }
+              50% { transform: scale(1.05); }
+              100% { transform: scale(1); }
+            }
+        
+            /* ---------- Rotating Qubit Placeholder ---------- */
+            .qubit-container {
+              width: 180px;
+              height: 180px;
+              margin: 0 auto 30px auto;
+              perspective: 800px;
+            }
+            .qubit {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              background: radial-gradient(circle at 30% 30%, #FFFFFF, #00BFFF);
+              transform-style: preserve-3d;
+              animation: rotateQubit 8s linear infinite;
+              box-shadow: 0 0 12px rgba(0, 191, 255, 0.8);
+            }
+            @keyframes rotateQubit {
+              0% { transform: rotateY(0deg) rotateX(20deg); }
+              100% { transform: rotateY(360deg) rotateX(20deg); }
+            }
+        
+            /* ---------- Emoji Pop Effect ---------- */
+            .emoji-pop {
+              position: absolute;
+              font-size: 1.5rem;
+              pointer-events: none;
+              animation: moveUpFade 1s forwards;
+              will-change: transform, opacity;
+            }
+            @keyframes moveUpFade {
+              0% {
+                opacity: 1;
+                transform: translateY(0);
+              }
+              100% {
+                opacity: 0;
+                transform: translateY(-50px);
+              }
+            }
+          </style>
+        </head>
+        <body>
+          <!-- ========== About Section ========== -->
+          <section id="about">
+            <!-- Rotating Qubit Animation -->
+            <div class="qubit-container">
+              <!-- This CSS circle simulates a rotating qubit. Replace with an actual 3D-rendered GIF or image if preferred. -->
+              <div class="qubit"></div>
+            </div>
+        
+            <section class="text-center px-6 py-20 bg-gradient-to-b from-[#0F1C4D] to-[#070E24] text-white font-sans">
+                <h2 class="text-5xl md:text-6xl font-extrabold mb-6 animate-pulse tracking-tight">Hey Skynaut, Welcome to Orbit 🚀</h2>
+                <p class="max-w-4xl mx-auto text-xl md:text-2xl text-gray-300 leading-relaxed mb-8">
+                  You didn’t just join another tech club.  
+                  You became part of a movement — a crew rewriting what’s possible, pixel by pixel, qubit by qubit.  
+                  The universe isn’t waiting. It’s expanding.  
+                  And you? You’re right at the edge of it, suit on, visor down, mission engaged.
+                </p>
+              
+                <p class="max-w-4xl mx-auto text-lg text-gray-200 mb-6">
+                  Maybe you’re new to code. Maybe "quantum" sounds like sci-fi.  
+                  Or maybe you’ve already touched the stars through projects, code, and late-night ideas scribbled in notebooks.  
+                  No matter where you're starting — you're *exactly where you need to be.*  
+                  <span class="text-cyan-300 font-semibold">Everyone starts somewhere.</span> What matters is that you started.
+                </p>
+              
+                <p class="max-w-4xl mx-auto text-lg text-gray-200 mb-6">
+                  Being a Skynaut means you don’t settle for the ground.  
+                  You ask more. You build weird. You dare to dream in quantum bits and sky-level ideas.  
+                  Here, we fail forward. We learn together. We launch, iterate, crash, rebuild — and rise higher.
+                </p>
+              
+                <p class="max-w-4xl mx-auto text-lg text-gray-200 mb-6">
+                  You now have access to minds like yours — hungry, curious, bold.  
+                  Hackathons. Mentorships. Group projects. Secret sauce knowledge drops.  
+                  We don’t gatekeep. We grow together. This is your playground. Your lab. Your launchpad.
+                </p>
+              
+                <p class="max-w-4xl mx-auto text-lg text-gray-300 mb-6 italic">
+                  Whether you’re a coder, a thinker, a designer, or just figuring it out…  
+                  there’s a seat for you in this skyship.
+                </p>
+              
+                <p class="max-w-4xl mx-auto text-lg text-gray-200 mb-6">
+                  The world is evolving fast. Quantum computing isn’t the future — it’s *now.*  
+                  And the next big innovation? The next spark that changes everything?  
+                  <span class="text-yellow-300 font-bold">It might just come from you.</span>
+                </p>
+              
+                <div class="text-xl md:text-2xl font-semibold text-white mt-10 mb-6 animate-fade-in-up">
+                  ✨ So suit up, Skynaut.  
+                  Let’s build what’s never been built.  
+                  Let’s unlock the impossible.  
+                  Let’s launch.
+
+
+                  
+                </div>
+       <P>EVERYTHING YOU REQUIRE TO SUCCED HAS BEEN SUPPLIED IN YOU <img class="img-fluid" src="img/goal.png" alt="self-love" ></P>       
+<P>Say it with me: I CAN DO THIS!</P>
+
+                <button class="mt-8 px-8 py-4 bg-cyan-500 text-[#0F1C4D] rounded-full text-lg font-bold hover:bg-cyan-400 transition-all shadow-lg animate-bounce">
+                 THERE YOU GO 🥳YOU ABLE SKYNAUT </canvas> 
+                </button>
+              </section>
+              
+        
+          
+
+
+
+          </section>
+        
+          <!-- ========== JavaScript for Emoji Pop ========== -->
+          <script>
+            (function() {
+              const aboutSection = document.getElementById('about');
+              const emojis = ['✨', '💥', '🚀', '🌟', '⚡️', '🔥'];
+        
+              aboutSection.addEventListener('click', (e) => {
+                // Only generate emoji if clicking on a buzzword or anywhere in the section
+                const x = e.clientX - aboutSection.getBoundingClientRect().left;
+                const y = e.clientY - aboutSection.getBoundingClientRect().top;
+        
+                const emojiSpan = document.createElement('span');
+                emojiSpan.classList.add('emoji-pop');
+                emojiSpan.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                emojiSpan.style.left = `${x}px`;
+                emojiSpan.style.top = `${y}px`;
+        
+                aboutSection.appendChild(emojiSpan);
+        
+                // Remove the emoji after animation finishes
+                emojiSpan.addEventListener('animationend', () => {
+                  emojiSpan.remove();
+                });
+              });
+            })();
+          </script>
+        </body>
+        </html>
+        
+   
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+          <title>Upcoming Events | Quantum Sky</title>
+          <style>
+            body {
+              margin: 0;
+              font-family: 'Segoe UI', sans-serif;
+              background-color: #000b1e;
+              color: #fff;
+            }
+        
+            #events-section {
+              background: radial-gradient(circle at center, #001a33, #000b1e);
+              padding: 80px 20px;
+              color: #fff;
+              text-align: center;
+              position: relative;
+              overflow: hidden;
+            }
+        
+            .events-title {
+              font-size: 2.8rem;
+              color: #00BFFF;
+              margin-bottom: 50px;
+              text-shadow: 0 0 10px #00BFFF;
+              animation: fadeInUp 1s ease forwards;
+            }
+        
+            .events-container {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 30px;
+              animation: fadeInUp 1.5s ease forwards;
+            }
+        
+            .event-card {
+              background: rgba(0, 191, 255, 0.1);
+              border: 1px solid #00BFFF;
+              border-radius: 12px;
+              padding: 25px;
+              width: 300px;
+              position: relative;
+              box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              animation: floatUp 1s ease;
+            }
+        
+            .event-card:hover {
+              transform: scale(1.03);
+              box-shadow: 0 0 30px rgba(0, 191, 255, 0.5);
+            }
+        
+            .event-info h3 {
+              color: #00BFFF;
+              margin-bottom: 15px;
+              font-size: 1.4rem;
+            }
+        
+            .event-info p {
+              font-size: 1rem;
+              margin: 6px 0;
+              color: #ddd;
+            }
+        
+            .icon {
+              margin-right: 8px;
+              color: #00BFFF;
+            }
+        
+            .event-tag {
+              position: absolute;
+              top: -12px;
+              right: -12px;
+              background: #00BFFF;
+              color: #001a33;
+              padding: 6px 12px;
+              border-radius: 50px;
+              font-size: 0.85rem;
+              font-weight: bold;
+              box-shadow: 0 0 12px #00BFFF;
+            }
+        
+            /* Animations */
+            @keyframes fadeInUp {
+              from {
+                transform: translateY(40px);
+                opacity: 0;
+              }
+              to {
+                transform: translateY(0);
+                opacity: 1;
+              }
+            }
+        
+            @keyframes floatUp {
+              from {
+                transform: translateY(50px);
+                opacity: 0;
+              }
+              to {
+                transform: translateY(0);
+                opacity: 1;
+              }
+            }
+          </style>
+        </head>
+        <body>
+        
+          <section id="events-section">
+            <h2 class="events-title">🚀 Upcoming Quantum Events</h2>
+            <div class="events-container">
+        
+              <!-- Event 1 -->
+              <div class="event-card">
+                <div class="event-info">
+                  <h3>Quantum Sky Launch Party</h3>
+                  <p><i class="icon">📅</i> Aug 15, 2025</p>
+                  <p><i class="icon">📍</i> Nairobi Tech Hub</p>
+                  <p><i class="icon">🏢</i> Physical</p>
+                </div>
+                <div class="event-tag">🔥 Party</div>
+              </div>
+        
+              <!-- Event 2 -->
+              <div class="event-card">
+                <div class="event-info">
+                  <h3>Q-Code: Build Your First Quantum Algorithm</h3>
+                  <p><i class="icon">📅</i> Sept 3, 2025</p>
+                  <p><i class="icon">🌐</i> Zoom Live</p>
+                  <p><i class="icon">💻</i> Online</p>
+                </div>
+                <div class="event-tag">💡 Workshop</div>
+              </div>
+        
+              <!-- Event 3 -->
+              <div class="event-card">
+                <div class="event-info">
+                  <h3>Skynaut Day: Celebration + Skill Demos</h3>
+                  <p><i class="icon">📅</i> Oct 10, 2025</p>
+                  <p><i class="icon">📍</i> Quantum HQ Arena</p>
+                  <p><i class="icon">🏢</i> Physical</p>
+                </div>
+                <div class="event-tag">🎉 Community</div>
+              </div>
+        
+            </div>
+          </section>
+        
+        </body>
+        </html>
+        
+
+
+<!-- ====== Glowing Diagonal Scanner Divider ====== -->
+<div class="scanner-divider">
+    <div class="scanner-line"></div>
+  </div>
+  
+  <style>
+    .scanner-divider {
+      position: relative;
+      height: 80px;            /* Adjust thickness */
+      overflow: hidden;
+      background: #0F1C4D;      /* Dark-blue base */
+    }
+    .scanner-line {
+      position: absolute;
+      top: -60px;               /* Starts above container */
+      left: -100%;
+      width: 200%;              /* Ensures full diagonal coverage */
+      height: 200%;
+      transform: rotate(15deg);
+      background: linear-gradient(
+        120deg,
+        rgba(0,191,255,0) 30%,
+        rgba(0,191,255,0.5) 50%,
+        rgba(0,191,255,0) 70%
+      );
+      animation: sweep 2.5s infinite ease-in-out;
+    }
+    @keyframes sweep {
+      0%   { left: -100%; }
+      50%  { left: 100%; }
+      100% { left: -100%; }
+    }
+  </style>
+
+
+
+
+
+
+       
+  <!-- ========== “What You Get as a Member” Section (Upgraded) ========== -->
+<section id="benefits">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+  
+      #benefits {
+        max-width: 900px;
+        margin: 100px auto;
+        padding: 50px;
+        position: relative;
+        background:  rgb(25, 69, 134);
+        border: 2px solid rgba(0, 191, 255, 0.3);
+        border-radius: 16px;
+        box-shadow: 0 0 25px rgba(0, 191, 255, 0.3), 0 0 60px rgba(0, 191, 255, 0.2) inset;
+        color: #ffffff;
+        font-family: 'Orbitron', sans-serif;
+        overflow: hidden;
+        animation: fadeInUp 1s ease;
+      }
+  
+     
+  
+      #benefits h2 {
+        font-size: 2.8rem;
+        text-align: center;
+        margin-bottom: 40px;
+        color: #00BFFF;
+        text-shadow: 0 0 12px #00BFFF;
+      }
+  
+      .benefit-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+  
+      .benefit-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 25px;
+        padding: 16px;
+        border-radius: 12px;
+        position: relative;
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.02);
+        transition: transform 0.4s ease, background 0.4s ease;
+        animation: fadeInUp 0.8s ease;
+      }
+  
+      .benefit-item:hover {
+        transform: translateY(-5px) scale(1.01);
+        background: rgba(0, 191, 255, 0.07);
+      }
+  
+      .benefit-icon {
+        font-size: 2rem;
+        margin-right: 20px;
+        color: #00BFFF;
+        text-shadow: 0 0 6px #00BFFF;
+        animation: pulseGlow 2s infinite alternate;
+      }
+  
+      @keyframes pulseGlow {
+        0% {
+          text-shadow: 0 0 6px #00BFFF;
+        }
+        100% {
+          text-shadow: 0 0 15px #00BFFF;
+        }
+      }
+  
+      .benefit-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        transition: all 0.3s ease;
+      }
+  
+      .buzzword {
+        color: #ffffff;
+        font-weight: bold;
+        position: relative;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+  
+      .buzzword:hover {
+        color: #00BFFF;
+        text-shadow: 0 0 12px #00BFFF;
+      }
+  
+      /* Floating Particles Background */
+      #benefits::before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        background: url('https://cdn.jsdelivr.net/gh/JulianPrieber/particles@latest/particles-bg.svg') repeat;
+        animation: floatBackground 60s linear infinite;
+        opacity: 0.03;
+        z-index: 0;
+        top: -50%;
+        left: -50%;
+      }
+  
+      @keyframes floatBackground {
+        from {
+          transform: translate(0, 0);
+        }
+        to {
+          transform: translate(100px, 100px);
+        }
+      }
+    </style>
+  
+    <h2>What You Get as a Member</h2>
+  
+    <ul class="benefit-list">
+      <li class="benefit-item">
+        <div class="benefit-icon">💡</div>
+        <div class="benefit-text">
+          <span class="buzzword">Exclusive articles & tutorials</span> — dive into mind-bending quantum guides with slick infographics and snappy video explainers you can binge anywhere.
+        </div>
+      </li>
+  
+      <li class="benefit-item">
+        <div class="benefit-icon">🌍</div>
+        <div class="benefit-text">
+          <span class="buzzword">Live webinars & meetups</span> — hang out with the quantum elite, get real-time insights, and vibe in futuristic virtual lounges.
+        </div>
+      </li>
+  
+      <li class="benefit-item">
+        <div class="benefit-icon">🧠</div>
+        <div class="benefit-text">
+          <span class="buzzword">Hands-on collaboration</span> — join squads, build actual quantum prototypes, and test theories with feedback from global mentors.
+        </div>
+      </li>
+  
+      <li class="benefit-item">
+        <div class="benefit-icon">🧾</div>
+        <div class="benefit-text">
+          <span class="buzzword">Earn certifications & badges</span> — unlock achievement badges and official certs that prove your skills (and look 🔥 on your LinkedIn).
+        </div>
+      </li>
+  
+      <li class="benefit-item">
+        <div class="benefit-icon">🛠️</div>
+        <div class="benefit-text">
+          <span class="buzzword">XP Challenges & Leaderboards</span> — complete quantum puzzles, collect XP, and see your name glow on our global leaderboard.
+        </div>
+      </li>
+  
+      <li class="benefit-item">
+        <div class="benefit-icon">🎁</div>
+        <div class="benefit-text">
+          <span class="buzzword">Member-only perks & surprises</span> — get early access to beta tools, surprise swag drops, and hidden easter eggs just for insiders.
+        </div>
+      </li>
+    </ul>
+  
+    <script>
+      // Emoji Pop on Click (unchanged)
+      (function () {
+        const benefitsSection = document.getElementById('benefits');
+        const emojis = ['✨', '🔥', '🚀', '⚡️', '🌟'];
+        benefitsSection.addEventListener('click', (e) => {
+          const rect = benefitsSection.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const emojiSpan = document.createElement('span');
+          emojiSpan.classList.add('emoji-pop');
+          emojiSpan.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+          emojiSpan.style.left = `${x}px`;
+          emojiSpan.style.top = `${y}px`;
+          benefitsSection.appendChild(emojiSpan);
+          emojiSpan.addEventListener('animationend', () => emojiSpan.remove());
+        });
+      })();
+    </script>
+  </section>
+  
+
+<!-- ====== Wavy SVG Gradient Divider ====== -->
+<div class="wave-divider">
+    <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="waveGradient" gradientUnits="userSpaceOnUse"
+                        x1="0" y1="0" x2="1200" y2="0">
+          <stop offset="0%" stop-color="#0F1C4D" />
+          <stop offset="50%" stop-color="#00BFFF" />
+          <stop offset="100%" stop-color="#0F1C4D" />
+        </linearGradient>
+        <path id="wavePath" d="M0,30 C300,80 900,0 1200,30 L1200,100 L0,100 Z" />
+      </defs>
+      <g>
+        <!-- Base wave shape -->
+        <use href="#wavePath" fill="url(#waveGradient)" />
+        <!-- Animated overlay for movement -->
+        <use href="#wavePath" fill="url(#waveGradient)" opacity="0.3">
+          <animateTransform attributeName="transform"
+                            attributeType="XML"
+                            type="translate"
+                            from="0 0"
+                            to="-1200 0"
+                            dur="6s"
+                            repeatCount="indefinite" />
+        </use>
+      </g>
+    </svg>
+  </div>
+  
+  <style>
+    .wave-divider {
+      position: relative;
+      width: 100%;
+      height: 100px;         /* Adjust height as needed */
+      overflow: hidden;
+      background: #0F1C4D;   /* Must match page bg for seamless join */
+    }
+    .wave-divider svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  
+
+
+
+
+<!-- QuantumSky Club - How to Join Section -->
+<section id="how-to-join" style="background: #0f1c4d; padding: 60px 20px; font-family: 'Segoe UI', sans-serif; color: white;">
+    <div style="max-width: 1000px; margin: auto; text-align: center;">
+      <h2 style="font-size: 2.8rem; font-weight: 900; color: #00bfff; margin-bottom: 10px; animation: fadeInDown 1s ease;">🚀 Join the QuantumSky Club</h2>
+      <p style="font-size: 1.2rem; color: #a0d8ff; margin-bottom: 40px; animation: fadeIn 1.5s ease;">
+        Ready to explore, build, and vibe with a crew that’s obsessed with the future?  
+        Pick your path and let’s GO!
+      </p>
+  
+      <!-- Plans Container -->
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+  
+        <!-- Free Tier Card -->
+        <div class="plan-card" style="flex: 1 1 280px; background: #002244; border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0, 191, 255, 0.3); animation: fadeInUp 1.3s ease;">
+          <h3 style="color: #00bfff; font-size: 1.6rem; font-weight: bold; margin-bottom: 15px;">🎉 Free Tier</h3>
+          <ul style="text-align: left; padding-left: 0; list-style: none; color: #e0f7ff; line-height: 1.8;">
+            <li>✅ Access to the forum</li>
+            <li>🎤 Join basic events and workshops</li>
+            <li>🌱 Explore quantum concepts at your pace</li>
+          </ul>
+          <p style="margin-top: 10px; font-style: italic; color: #99d4ff;">Perfect for quantum-curious beginners!</p>
+        </div>
+  
+        <!-- Premium Tier Card -->
+        <div class="plan-card" style="flex: 1 1 280px; background: #112c1f; border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(52, 168, 83, 0.4); animation: fadeInUp 1.6s ease;">
+          <h3 style="color: #34a853; font-size: 1.6rem; font-weight: bold; margin-bottom: 15px;">🌟 Premium Tier</h3>
+          <ul style="text-align: left; padding-left: 0; list-style: none; color: #d4fbe4; line-height: 1.8;">
+            <li>🔥 All Free Tier perks</li>
+            <li>🎯 Live mentorships with quantum experts</li>
+            <li>🤝 Project collabs & portfolio boosters</li>
+            <li>🏅 Exclusive certifications + hackathons</li>
+          </ul>
+          <p style="margin-top: 10px; font-style: italic; color: #a8f5c1;">For future-builders ready to go all in!</p>
+        </div>
+      </div>
+  
+      <!-- CTA Buttons -->
+      <div style="margin-top: 50px;">
+        <button id="viewPlansBtn" style="
+          background:#00BFFF;
+          color:white;
+          font-weight:bold;
+          padding:14px 32px;
+          border:none;
+          border-radius: 10px;
+          margin: 10px;
+          cursor:pointer;
+          box-shadow: 0 6px 18px rgba(0,191,255,0.7);
+          font-size: 1.1rem;
+          transition: transform 0.3s ease;">
+          Sign up for free
+        </button>
+        <button id="signUpBtn" style="
+          background:#34A853;
+          color:white;
+          font-weight:bold;
+          padding:14px 32px;
+          border:none;
+          border-radius: 10px;
+          margin: 10px;
+          cursor:pointer;
+          box-shadow: 0 6px 18px rgba(52,168,83,0.7);
+          font-size: 1.1rem;
+          transition: transform 0.3s ease;">
+         View plan
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Animations -->
+  <style>
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  
+    #viewPlansBtn:hover,
+    #signUpBtn:hover {
+      transform: scale(1.1);
+    }
+  </style>
+  
+  <!-- Button click handling (can be customized) -->
+  <script>
+    document.getElementById('viewPlansBtn').addEventListener('click', () => {
+      window.location.href = '/plans.html'; // Adjust as needed
+    });
+    document.getElementById('signUpBtn').addEventListener('click', () => {
+      window.location.href = '/signup.html'; // Adjust as needed
+    });
+  </script>
+  
+
+</div></body></html>
+
+
+        
