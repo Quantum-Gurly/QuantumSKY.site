@@ -155,7 +155,7 @@
     <div class="hero-content">
       <h1 class="hero-title">Quantum Sky Awaits</h1>
       <p class="hero-subtitle">Join the revolution where African brilliance meets quantum innovation. Let’s shape the future, one qubit at a time.</p>
-      <a href="signup.html" class="hero-button">Become a Member</a>
+      <a href="membershipform.html" class="hero-button">Become a Member</a>
     </div>
   </section>
   
@@ -1642,6 +1642,116 @@
   </section>
   
 
+
+
+<section class="membership-jobs-section">
+  <div class="container">
+    <h2 class="section-title">🚀 Unlock Exclusive Job Opportunities</h2>
+    <p class="section-subtitle">Join our membership to access and share amazing quantum-powered careers.</p>
+
+    <div class="job-access-options">
+      <!-- Get Jobs -->
+      <div class="job-card reveal">
+        <div class="icon">💼</div>
+        <h3>Access Elite Jobs</h3>
+        <p>Members get insider access to top-tier job offers from prestigious companies looking for quantum-aware talent across all industries.</p>
+        <a href="jobs.html" class="btn-glow">Browse Jobs</a>
+      </div>
+
+      <!-- Post Jobs -->
+      <div class="job-card reveal delay">
+        <div class="icon">📢</div>
+        <h3>Post Job Opportunities</h3>
+        <p>Are you hiring? Share job opportunities with our growing community of quantum enthusiasts ready to transform the world.</p>
+        <a href="jobpost.html" class="btn-glow">Post a Job</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.membership-jobs-section {
+  background: linear-gradient(145deg, #0f1c4d, #1e295b);
+  padding: 5rem 2rem;
+  color: #fff;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #00bfff;
+  animation: floatIn 1s ease-out forwards;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #aad8ff;
+}
+
+.job-access-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.job-card {
+  background: #ffffff10;
+  border: 1px solid #00bfff55;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.job-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px #00bfff88;
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.btn-glow {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #00bfff;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-glow:hover {
+  background-color: #009ace;
+  transform: scale(1.05);
+}
+
+@keyframes floatIn {
+  0% { transform: translateY(40px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.reveal {
+  animation: floatIn 1s ease forwards;
+}
+
+.reveal.delay {
+  animation-delay: 0.5s;
+}
+</style>
+
+
+
+
 <!-- ====== Wavy SVG Gradient Divider ====== -->
 <div class="wave-divider">
     <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
@@ -1692,72 +1802,316 @@
 
 
 
+
+
+
 <!-- QuantumSky Club - How to Join Section -->
 <section id="how-to-join" style="background: #0f1c4d; padding: 60px 20px; font-family: 'Segoe UI', sans-serif; color: white;">
     <div style="max-width: 1000px; margin: auto; text-align: center;">
-      <h2 style="font-size: 2.8rem; font-weight: 900; color: #00bfff; margin-bottom: 10px; animation: fadeInDown 1s ease;">🚀 Join the QuantumSky Club</h2>
-      <p style="font-size: 1.2rem; color: #a0d8ff; margin-bottom: 40px; animation: fadeIn 1.5s ease;">
-        Ready to explore, build, and vibe with a crew that’s obsessed with the future?  
-        Pick your path and let’s GO!
+     
+  
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Your Path</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0f1117;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 2rem 0 1rem;
+      color: #00ffe0;
+      font-family: 'Orbitron', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .path-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .path-card {
+      background: linear-gradient(135deg, #1f1f2e, #2d2d4d);
+      border: 2px solid #00ffe0;
+      border-radius: 20px;
+      width: 300px;
+      padding: 1.5rem;
+      box-shadow: 0 0 15px #00ffe055;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    .path-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 0 25px #00ffe0aa;
+    }
+
+    .path-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #00ffe0;
+    }
+
+    .path-card p {
+      font-weight: bold;
+      margin-bottom: 0.8rem;
+    }
+
+    .path-card ul {
+      list-style: none;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .path-card ul li::before {
+      content: "⚡";
+      margin-right: 0.5rem;
+      color: #00ffe0;
+    }
+
+    .path-card ul li {
+      margin-bottom: 0.4rem;
+      line-height: 1.4;
+    }
+
+    .path-card button {
+      display: inline-block;
+      background: #00ffe0;
+      color: #0f1117;
+      padding: 0.6rem 1.2rem;
+      border-radius: 30px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .path-card button:hover {
+      background: #0ff;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Modal styles */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal-content {
+      background: #1c1f2e;
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      border: 2px solid #00ffe0;
+      box-shadow: 0 0 20px #00ffe0aa;
+      max-width: 90%;
+      width: 400px;
+    }
+
+    .modal-content h3 {
+      color: #00ffe0;
+      margin-bottom: 1rem;
+    }
+
+    .modal-content p {
+      margin-bottom: 1.5rem;
+      color: #ccc;
+    }
+
+    .modal-content button {
+      background: #00ffe0;
+      color: #0f1117;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .modal-content button:hover {
+      background: #0ff;
+    }
+
+#emojiPopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 200px; /* HUGE emoji */
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <h1 class="section-title">🚀 Choose Your Path</h1>
+
+  <div class="path-container">
+
+    <div class="path-card">
+      <h2>🌟 Path of Purpose</h2>
+      <p>I choose growth and impact.</p>
+      <ul>
+        <li>Bold action taker</li>
+        <li>Growth-oriented mindset</li>
+        <li>Driven to make a difference</li>
+        <li>Willing to face challenges</li>
+        <li>Purpose and leadership focused</li>
+      </ul>
+      <button onclick="showModal('modalAction')">Start Your Journey 🚀</button>
+    </div>
+
+    <div class="path-card">
+      <h2>🛋️ Path of Comfort</h2>
+      <p>I prefer the familiar and safe.</p>
+      <ul>
+        <li>Value stability over risk</li>
+        <li>Resistant to major changes</li>
+        <li>Comfort in routine</li>
+        <li>Low stress, low change</li>
+        <li>Watch others grow</li>
+      </ul>
+      <button onclick="showModal('modalComfort')">Stay Where You Are 💤</button>
+    </div>
+
+    <div class="path-card">
+      <h2>🤔 Undecided?</h2>
+      <p>I need clarity and direction.</p>
+      <ul>
+        <li>Open to new possibilities</li>
+        <li>Curious but unsure</li>
+        <li>Want inspiration</li>
+        <li>Seeking first steps</li>
+        <li>Need encouragement</li>
+      </ul>
+      <button onclick="showModal('modalUnsure')">Help Me Choose 💡</button>
+    </div>
+
+  </div>
+
+  <!-- Modals -->
+  <div id="modalAction" class="modal">
+    <div class="modal-content">
+      <h3>🎉 Way to Go!</h3>
+      <p>You're choosing growth, courage, and purpose. Let's ignite the future together!
+        
       </p>
-  
-      <!-- Plans Container -->
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
-  
-        <!-- Free Tier Card -->
-        <div class="plan-card" style="flex: 1 1 280px; background: #002244; border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0, 191, 255, 0.3); animation: fadeInUp 1.3s ease;">
-          <h3 style="color: #00bfff; font-size: 1.6rem; font-weight: bold; margin-bottom: 15px;">🎉 Free Tier</h3>
-          <ul style="text-align: left; padding-left: 0; list-style: none; color: #e0f7ff; line-height: 1.8;">
-            <li>✅ Access to the forum</li>
-            <li>🎤 Join basic events and workshops</li>
-            <li>🌱 Explore quantum concepts at your pace</li>
-          </ul>
-          <p style="margin-top: 10px; font-style: italic; color: #99d4ff;">Perfect for quantum-curious beginners!</p>
-        </div>
-  
-        <!-- Premium Tier Card -->
-        <div class="plan-card" style="flex: 1 1 280px; background: #112c1f; border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(52, 168, 83, 0.4); animation: fadeInUp 1.6s ease;">
-          <h3 style="color: #34a853; font-size: 1.6rem; font-weight: bold; margin-bottom: 15px;">🌟 Premium Tier</h3>
-          <ul style="text-align: left; padding-left: 0; list-style: none; color: #d4fbe4; line-height: 1.8;">
-            <li>🔥 All Free Tier perks</li>
-            <li>🎯 Live mentorships with quantum experts</li>
-            <li>🤝 Project collabs & portfolio boosters</li>
-            <li>🏅 Exclusive certifications + hackathons</li>
-          </ul>
-          <p style="margin-top: 10px; font-style: italic; color: #a8f5c1;">For future-builders ready to go all in!</p>
-        </div>
-      </div>
-  
-      <!-- CTA Buttons -->
-      <div style="margin-top: 50px;">
-        <a href="payments.html" id="viewPlansBtn" style="
-          background:#00BFFF;
-          color:white;
-          font-weight:bold;
-          padding:14px 32px;
-          border:none;
-          border-radius: 10px;
-          margin: 10px;
-          cursor:pointer;
-          box-shadow: 0 6px 18px rgba(0,191,255,0.7);
-          font-size: 1.1rem;
-          transition: transform 0.3s ease;">
-        View plan
-      </a>
-        <a href="signup.html" id="signUpBtn" style="
-          background:#34A853;
-          color:white;
-          font-weight:bold;
-          padding:14px 32px;
-          border:none;
-          border-radius: 10px;
-          margin: 10px;
-          cursor:pointer;
-          box-shadow: 0 6px 18px rgba(52,168,83,0.7);
-          font-size: 1.1rem;
-          transition: transform 0.3s ease;">
-         Signup
-        </button>
+      <button onclick="redirect('membershipform.html')">Continue 🚀</button>
+    </div>
+  </div>
+
+  <div id="modalComfort" class="modal">
+    <div class="modal-content">
+      <h3>💤 Staying Safe</h3>
+     
+
+
+
+      <p>Comfort is okay — just remember, growth lives on the other side of risk.</p>
+
+     
+      <div id="emojiPopup">🥲</div>
+    </div>
+  </div>
+
+  <div id="modalUnsure" class="modal">
+    <div class="modal-content">
+      <h3>💡 Curious Explorer!</h3>
+      <p>It's okay to be unsure. You’ve already taken the first step by asking for more.
+        Explore our articles and blogs and let them lead you into the quantum world.
+      </p>
+      <button onclick="redirect('writtinglist.html')">Explore our writtings🌱</button>
+    </div>
+  </div>
+
+  <script>
+    function showModal(id) {
+      document.getElementById(id).style.display = "flex";
+    }
+
+    function redirect(page) {
+      window.location.href = page;
+    }
+
+    window.onclick = function (event) {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+     
+  function showSadEmoji() {
+    const popup = document.getElementById("emojiPopup");
+    popup.style.display = "block";
+    popup.style.opacity = "1";
+
+    setTimeout(() => {
+      popup.style.opacity = "0";
+      setTimeout(() => {
+        popup.style.display = "none";
+      }, 500);
+    }, 2500); // Visible for 2.5 seconds
+  }
+
+document.getElementById("yourButtonId").addEventListener("click", showSadEmoji);
+
+
+
+    };
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+    
       </div>
     </div>
   </section>

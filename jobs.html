@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quantum Careers for All</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1a1a2e, #16213e, #0f3460);
+      color: #fff;
+      overflow-x: hidden;
+      padding-bottom: 100px;
+    }
+
+    header {
+      background-color: #0f3460;
+      text-align: center;
+      padding: 50px 20px;
+      animation: fadeInDown 1.2s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00bfff;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #cce7ff;
+      margin-top: 10px;
+      animation: fadeInUp 1s ease;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: 30px auto;
+      font-size: 1.1rem;
+      padding: 20px;
+      background: #ffffff15;
+      border-radius: 12px;
+      animation: slideUp 1s ease;
+    }
+
+    .job-listings {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .job-card {
+      background: #ffffff10;
+      border-left: 6px solid #00bfff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease;
+    }
+
+    .job-card h3 {
+      color: #00bfff;
+      margin-bottom: 8px;
+    }
+
+    .job-card p {
+      margin-bottom: 6px;
+    }
+
+    .job-card button {
+      background: #00bfff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .job-card button:hover {
+      background: #007cbf;
+    }
+
+    .job-form {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 30px;
+      background: #ffffff12;
+      border-radius: 12px;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .job-form h2 {
+      text-align: center;
+      color: #00bfff;
+      margin-bottom: 20px;
+    }
+
+    .job-form input,
+    .job-form textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 14px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .job-form button {
+      background: #00bfff;
+      color: white;
+      padding: 14px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .job-form button:hover {
+      background: #007cbf;
+    }
+
+    @keyframes fadeInDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(80px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    footer {
+      text-align: center;
+      color: #99d9ff;
+      padding: 30px 10px;
+      font-size: 0.9rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌌 Quantum Jobs for Everyone</h1>
+    <p>Whether you're in art, science, finance, or education—if you understand quantum, you're needed.</p>
+  </header>
+
+  <div class="intro">
+    <p>
+      The quantum revolution isn't just for physicists or engineers. Quantum thinking is reshaping industries from marketing to medicine, cybersecurity to sustainability. 
+      <strong>These jobs are for everyone who’s daring enough to understand quantum concepts and apply them in their fields.</strong> Whether you're a graphic designer working on quantum branding or a business strategist solving complex optimization problems, you belong here.
+    </p>
+  </div>
+
+  <section class="job-listings" id="jobListings">
+    <!-- Jobs will be posted here dynamically -->
+    <div class="job-card">
+      <h3>Quantum Finance Analyst 💼</h3>
+      <p><strong>Company:</strong> QuantumSky Investments</p>
+      <p><strong>Location:</strong> Remote</p>
+      <p><strong>Description:</strong> Use quantum-inspired algorithms to analyze market trends and risk models.</p>
+      <button onclick="alert('Apply process coming soon!')">Apply Now</button>
+    </div>
+  </section>
+
+ 
+
+  <footer>
+    🌍 Quantum jobs are the future — and you're part of it. Powered by QuantumSky.
+  </footer>
+
+  <script>
+    document.getElementById("postJobForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const company = document.getElementById("companyName").value;
+      const title = document.getElementById("jobTitle").value;
+      const location = document.getElementById("location").value;
+      const desc = document.getElementById("description").value;
+
+      const card = document.createElement("div");
+      card.classList.add("job-card");
+      card.innerHTML = `
+        <h3>${title}</h3>
+        <p><strong>Company:</strong> ${company}</p>
+        <p><strong>Location:</strong> ${location}</p>
+        <p><strong>Description:</strong> ${desc}</p>
+        <button onclick="alert('Apply process coming soon!')">Apply Now</button>
+      `;
+
+      document.getElementById("jobListings").prepend(card);
+      this.reset();
+      alert("✅ Job successfully posted!");
+    });
+  </script>
+
+</body>
+</html>
+
+
+
