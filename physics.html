@@ -382,6 +382,7 @@
           margin: auto;
           padding: 40px 20px;
           animation: fadeIn 1s ease;
+          background-color: #ffffff;
         }
     
         h1 {
@@ -401,7 +402,7 @@
         .tab-button {
           padding: 10px 26px;
           background: var(--blue);
-          color: white;
+          color: rgb(0, 0, 0);
           border: none;
           border-radius: 20px;
           font-weight: bold;
@@ -471,7 +472,7 @@
         .meta {
           margin-top: 10px;
           font-size: 0.9rem;
-          color: #555;
+          color: #000000;
           display: flex;
           flex-direction: column;
           gap: 4px;
@@ -511,119 +512,483 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <div class="container">
-        <h1>QuantumSKY Learning Path</h1>
-        <h1>🧠Choose Your Path To Greatness🧾</h1>
-      
-
+        <h1>Introduction to Quantum Computing</h1>
       
         <div class="tabs">
-          <button class="tab-button active" onclick="switchTab('physics')">Quantum Physics</button>
-          <button class="tab-button" onclick="switchTab('computing')">Quantum Computing</button>
-          <button class="tab-button" onclick="switchTab('programming')">Quantum Programming</button>
+          <button class="tab-button active" onclick="switchTab('course')">Course Description</button>
+          <button class="tab-button" onclick="switchTab('path')">Path Outline</button>
+          <button class="tab-button" onclick="switchTab('video')">Tutorial</button>
       </div>
       
-        <!-- Quantum Physics -->
-        <div id="physics" class="tab-content active">
-          <a href="evolution.html" target="_blank" class="post-card">
-            <div class="post-image">
-              <img src="img/physics1.jpg" alt=" Image">
-            </div>
-            <div class="post-content">
-              <h3>Evolution of Computing: From Past to Future</h3>
-<p>This course offers a guided journey through the evolution of computing, tracing how humanity moved from early counting tools and mechanical machines to the digital age and emerging quantum technologies. Through nine thematic modules, students will explore key inventions, influential figures, and technological breakthroughs that shaped the computing landscape. The course highlights not only the technical progression but also the societal, scientific, and philosophical impacts of each era. By the end, learners will gain a clear understanding of how computing has developed—and where it’s headed next.
+        <!-- Course -->
+        <div id="course" class="tab-content active">
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction to quantum computing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #100f0f;
+      animation: fadeIn 1.5s ease-in;
+    }
 
-</p>
-              </p>
-              <div class="meta">
-                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
-              </div>
-            </div>
-          </a>
-      
-          <a href="https://blogger.com/nature-walk" target="_blank" class="post-card">
-            <div class="post-image">
-              <img src="img/physics2.jpg" alt="Nature Blog">
-            </div>
-            <div class="post-content">
-              <h3>The Double-Slit Experiment Explained – The Mystery That Shook Physics</h3>
-              <p> What if just watching something changed its behavior? This tutorial dives deep into the famous double-slit experiment, revealing how observing quantum particles collapses their wave function. Using animations and clear language, we’ll show how this simple experiment continues to challenge everything we know about space, time, and consciousness.</p>
-              <div class="meta">
-               
-                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
-              </div>
-            </div>
-          </a>
+   .tab-content{
+    color: black;
+   }
+  
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    h2 {
+      color: #00b4db;
+      margin-top: 1.5rem;
+    }
+
+    p, li {
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideDown {
+      from {transform: translateY(-100%);}
+      to {transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .highlight {
+      color: #f9d423;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1></h1>
+  </header>
+
+  <section>
+  <h2>Course Description</h2>
+  <p>
+    The <span class="highlight">Introduction to Quantum Physics</span> course offers a comprehensive journey into the fundamental principles governing the microscopic world. Blending history, theory, and conceptual insights, this course demystifies quantum phenomena that challenge our classical intuitions.
+  </p>
+  <p>
+    Students will uncover the origins of quantum theory, delve into the dual nature of particles and waves, and explore how measurement and observation shape reality. Through engaging explanations and thought experiments, learners will gain the vocabulary and intuition to discuss quantum states, superposition, entanglement, and the philosophical implications of quantum mechanics.
+  </p>
+
+  <h2>Why This Course Matters</h2>
+  <ul>
+    <li>Provides a clear, intuitive foundation in quantum theory</li>
+    <li>Bridges historical experiments with modern quantum applications</li>
+    <li>Develops critical thinking about the nature of reality</li>
+    <li>Prepares learners for advanced studies in physics, computing, and related fields</li>
+  </ul>
+
+  <h2>Course Objectives</h2>
+  <ul>
+    <li>Explain the historical context and motivation for quantum mechanics</li>
+    <li>Describe key experiments: photoelectric effect, double-slit, Stern–Gerlach</li>
+    <li>Interpret the wavefunction and probability amplitudes</li>
+    <li>Apply the concepts of superposition and entanglement</li>
+    <li>Analyze the implications of the uncertainty principle</li>
+    <li>Discuss different interpretations of quantum measurement and collapse</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Comprehensive Learning Path</h2>
+  <p>
+    This structured quantum physics learning path guides students through eight foundational concepts in quantum theory. Each module builds on the previous, moving from basic principles to advanced phenomena and real-world implications.
+  </p>
+
+  <h2>Learning Path Modules</h2>
+  <ul>
+    <li>
+      <span class="step-title">Module 1: What Is Quantum Physics?</span>
+      <ul>
+        <li>Contrast classical and quantum worldviews</li>
+        <li>Understand why classical physics fails at the atomic scale</li>
+        <li>Introduce the quantum rulebook for the microscopic world</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="step-title">Module 2: The Birth of Quantum Theory</span>
+      <ul>
+        <li>Planck’s quantum hypothesis on energy quanta</li>
+        <li>Einstein’s photoelectric effect and photon concept</li>
+        <li>Challenges posed to classical wave theories</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="step-title">Module 3: Wave-Particle Duality</span>
+      <ul>
+        <li>Double-slit experiment demonstrations</li>
+        <li>de Broglie’s matter-wave hypothesis</li>
+        <li>Implications for particle and wave behaviors</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="step-title">Module 4: The Uncertainty Principle</span>
+      <ul>
+        <li>Heisenberg’s limits on position and momentum</li>
+        <li>Fundamental measurement restrictions</li>
+        <li>Philosophical impact on determinism</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="step-title">Module 5: The Quantum State and Wavefunctions</span>
+      <ul>
+        <li>Definition of the wavefunction (ψ)</li>
+        <li>Born rule and probability interpretation</li>
+        <li>Mathematical description of quantum systems</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="step-title">Module 6: Quantum Superposition</span>
+      <ul>
+        <li>Concept of simultaneous states</li>
+        <li>Schrödinger’s cat thought experiment</li>
+        <li>Real-world examples of superposition</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="step-title">Module 7: Quantum Entanglement</span>
+      <ul>
+        <li>Definition and creation of entangled pairs</li>
+        <li>Bell’s theorem and experimental evidence</li>
+        <li>Applications in quantum communication</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="step-title">Module 8: Measurement and Collapse</span>
+      <ul>
+        <li>Wavefunction collapse upon observation</li>
+        <li>Different interpretations (Copenhagen, Many-Worlds)</li>
+        <li>Role of measurement in quantum theory</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+
+
+</body>
+</html>
         </div>
       
-<!-- Quantum Computing -->
-<div id="computing" class="tab-content active">
-  <a href="https://medium.com/my-first-blog" target="_blank" class="post-card">
+<!-- Path-->
+<div id="path" class="tab-content active">
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction to Quantum Computing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #000000;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+   
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #f9d423;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    h2 {
+      color: #00d4ff;
+      margin-top: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    p, li {
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideDown {
+      from {transform: translateY(-100%);}
+      to {transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .step-title {
+      font-weight: bold;
+      color: #fbc02d;
+      margin-top: 1rem;
+    }
+    .tab-content{
+      color:black;
+    }
+    
+  </style>
+</head>
+<body>
+
+
+  <section>
+  <h2>Comprehensive Learning Path</h2>
+  <p>
+    This structured quantum physics learning path guides students through eight foundational concepts in quantum theory. Each module builds on the previous, moving from basic principles to advanced phenomena and real-world implications.
+  </p>
+
+  <h2>Learning Path Modules</h2>
+  <ul>
+    <li>
+      <span class="step-title">Module 1: What Is Quantum Physics?</span>
+      <ul>
+        <li>Contrast classical and quantum worldviews</li>
+        <li>Understand why classical physics fails at the atomic scale</li>
+        <li>Introduce the quantum rulebook for the microscopic world</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="step-title">Module 2: The Birth of Quantum Theory</span>
+      <ul>
+        <li>Planck’s quantum hypothesis on energy quanta</li>
+        <li>Einstein’s photoelectric effect and photon concept</li>
+        <li>Challenges posed to classical wave theories</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="step-title">Module 3: Wave-Particle Duality</span>
+      <ul>
+        <li>Double-slit experiment demonstrations</li>
+        <li>de Broglie’s matter-wave hypothesis</li>
+        <li>Implications for particle and wave behaviors</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="step-title">Module 4: The Uncertainty Principle</span>
+      <ul>
+        <li>Heisenberg’s limits on position and momentum</li>
+        <li>Fundamental measurement restrictions</li>
+        <li>Philosophical impact on determinism</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="step-title">Module 5: The Quantum State and Wavefunctions</span>
+      <ul>
+        <li>Definition of the wavefunction (ψ)</li>
+        <li>Born rule and probability interpretation</li>
+        <li>Mathematical description of quantum systems</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="step-title">Module 6: Quantum Superposition</span>
+      <ul>
+        <li>Concept of simultaneous states</li>
+        <li>Schrödinger’s cat thought experiment</li>
+        <li>Real-world examples of superposition</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="step-title">Module 7: Quantum Entanglement</span>
+      <ul>
+        <li>Definition and creation of entangled pairs</li>
+        <li>Bell’s theorem and experimental evidence</li>
+        <li>Applications in quantum communication</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="step-title">Module 8: Measurement and Collapse</span>
+      <ul>
+        <li>Wavefunction collapse upon observation</li>
+        <li>Different interpretations (Copenhagen, Many-Worlds)</li>
+        <li>Role of measurement in quantum theory</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+
+
+</body>
+</html>
+
+
+</div>
+
+        <!-- Video -->
+  <div id="video" class="tab-content">
+  <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
     <div class="post-image">
-      <img src="img/bit.jpg" alt="Blog Image">
+      <img src="img/qp1.jpg" alt="Quantum Physics Module">
     </div>
     <div class="post-content">
-      <h3>Evolution of Computing: From Past to Future</h3>
-<p>This course offers a guided journey through the evolution of computing, tracing how humanity moved from early counting tools and mechanical machines to the digital age and emerging quantum technologies. Through nine thematic modules, students will explore key inventions, influential figures, and technological breakthroughs that shaped the computing landscape. The course highlights not only the technical progression but also the societal, scientific, and philosophical impacts of each era. By the end, learners will gain a clear understanding of how computing has developed—and where it’s headed next.
-
-      </p>
+      <h3>Module 1: What Is Quantum Physics?</h3>
+      <p>Contrast the classical worldview with quantum reality. Discover why classical physics failed at the atomic scale and how quantum physics provides a new rulebook for the microscopic world.</p>
       <div class="meta">
-        
-        <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
+        <span><i class="fas fa-map-marker-alt"></i> Site: YouTube</span>
       </div>
     </div>
   </a>
 
-  <a href="https://blogger.com/nature-walk" target="_blank" class="post-card">
+  <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
     <div class="post-image">
-      <img src="img/entanglement.jpg" alt="Nature Blog">
+      <img src="img/qp2.jpg" alt="Quantum Physics Module">
     </div>
     <div class="post-content">
-      <h3>How Qubits Work – Superposition, Entanglement, and Quantum Gates</h3>
-      <p>Take a closer look at the magical building blocks of quantum computers: qubits. This episode explains how superposition lets a qubit be in multiple states at once, how entanglement links qubits across space, and how quantum gates perform computations in ways classical logic never could. With visuals and real-life metaphors, this is the perfect foundation for understanding real quantum algorithms.</p>
+      <h3>Module 2: The Birth of Quantum Theory</h3>
+      <p>Explore Planck’s quantum hypothesis and Einstein’s photoelectric effect. Learn how these breakthroughs challenged classical ideas about energy and light.</p>
       <div class="meta">
-       
-        <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
+        <span><i class="fas fa-map-marker-alt"></i> Site: YouTube</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
+    <div class="post-image">
+      <img src="img/qp3.jpg" alt="Quantum Physics Module">
+    </div>
+    <div class="post-content">
+      <h3>Module 3: Wave-Particle Duality</h3>
+      <p>Delve into the double-slit experiment and de Broglie’s hypothesis. See why particles can behave like waves and waves like particles.</p>
+      <div class="meta">
+        <span><i class="fas fa-map-marker-alt"></i> Site: YouTube</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
+    <div class="post-image">
+      <img src="img/qp4.jpg" alt="Quantum Physics Module">
+    </div>
+    <div class="post-content">
+      <h3>Module 4: The Uncertainty Principle</h3>
+      <p>Understand Heisenberg’s insight that position and momentum cannot both be known precisely. Explore the fundamental limits this imposes on measurement.</p>
+      <div class="meta">
+        <span><i class="fas fa-map-marker-alt"></i> Site: YouTube</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
+    <div class="post-image">
+      <img src="img/qp5.jpg" alt="Quantum Physics Module">
+    </div>
+    <div class="post-content">
+      <h3>Module 5: The Quantum State and Wavefunctions</h3>
+      <p>Introduce the wavefunction as the mathematical description of a quantum system. Learn the Born rule and how probabilities emerge from the wavefunction.</p>
+      <div class="meta">
+        <span><i class="fas fa-map-marker-alt"></i> Site: YouTube</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
+    <div class="post-image">
+      <img src="img/qp6.jpg" alt="Quantum Physics Module">
+    </div>
+    <div class="post-content">
+      <h3>Module 6: Quantum Superposition</h3>
+      <p>Discover how a quantum system can exist in multiple states simultaneously. Explore Schrödinger’s cat thought experiment and real-world examples of superposition.</p>
+      <div class="meta">
+        <span><i class="fas fa-map-marker-alt"></i> Site: YouTube</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
+    <div class="post-image">
+      <img src="img/qp7.jpg" alt="Quantum Physics Module">
+    </div>
+    <div class="post-content">
+      <h3>Module 7: Quantum Entanglement</h3>
+      <p>Learn how entangled particles share a linked state across distance. Discuss Bell’s theorem and experiments that confirm this “spooky” correlation.</p>
+      <div class="meta">
+        <span><i class="fas fa-map-marker-alt"></i> Site: YouTube</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
+    <div class="post-image">
+      <img src="img/qp8.jpg" alt="Quantum Physics Module">
+    </div>
+    <div class="post-content">
+      <h3>Module 8: Measurement and Collapse</h3>
+      <p>Examine how observation affects quantum systems. Explore wavefunction collapse, different interpretations, and what measurement means in quantum theory.</p>
+      <div class="meta">
+        <span><i class="fas fa-map-marker-alt"></i> Site: YouTube</span>
       </div>
     </div>
   </a>
 </div>
 
-        <!-- Quantum Programming -->
-        <div id="programming" class="tab-content">
-          <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
-            <div class="post-image">
-              <img src="img/pro1.jpg" alt="Quantum Article">
-            </div>
-            <div class="post-content">
-              <h3>Quantum Programming 101 – Your First Quantum Code with Qiskit</h3>
-              <p>Ready to write your first quantum program? In this hands-on tutorial, we’ll walk through installing Qiskit, setting up your environment, and writing a simple quantum circuit that uses superposition and measurement. No advanced math required—just follow along and run real quantum code on IBM’s quantum simulator!</p>
-              <div class="meta">
-               
-                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
-              </div>
-            </div>
-          </a>
-      
-          <a href="https://techjournal.com/ai-business" target="_blank" class="post-card">
-            <div class="post-image">
-              <img src="img/pro2.jpg" alt="AI Article">
-            </div>
-            <div class="post-content">
-              <h3>Build a Quantum Teleportation Program – Step-by-Step with Q#</h3>
-              <p>Quantum teleportation sounds like sci-fi, but it’s real—and you can code it. In this beginner-to-intermediate Q# tutorial, we’ll guide you through writing a program that teleports the state of one qubit to another using entanglement. Learn the syntax, logic, and power of Q# through this incredible experiment made executable!
-
-              </p>
-              <div class="meta">
-               
-                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      </body>
-      </html>
       
       <!DOCTYPE html>
 <html lang="en">

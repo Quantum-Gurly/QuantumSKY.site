@@ -382,6 +382,7 @@
           margin: auto;
           padding: 40px 20px;
           animation: fadeIn 1s ease;
+          background-color: #ffffff;
         }
     
         h1 {
@@ -401,7 +402,7 @@
         .tab-button {
           padding: 10px 26px;
           background: var(--blue);
-          color: white;
+          color: rgb(0, 0, 0);
           border: none;
           border-radius: 20px;
           font-weight: bold;
@@ -471,7 +472,7 @@
         .meta {
           margin-top: 10px;
           font-size: 0.9rem;
-          color: #555;
+          color: #000000;
           display: flex;
           flex-direction: column;
           gap: 4px;
@@ -511,107 +512,436 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <div class="container">
-        <h1>QuantumSKY Learning Path</h1>
-        <h1>🧠Choose Your Path To Greatness🧾</h1>
-      
-
+        <h1>Evolution of Computing</h1>
       
         <div class="tabs">
-          <button class="tab-button active" onclick="switchTab('physics')">Quantum Physics</button>
-          <button class="tab-button" onclick="switchTab('computing')">Quantum Computing</button>
-          <button class="tab-button" onclick="switchTab('programming')">Quantum Programming</button>
+          <button class="tab-button active" onclick="switchTab('course')">Course Description</button>
+          <button class="tab-button" onclick="switchTab('path')">Path Outline</button>
+          <button class="tab-button" onclick="switchTab('video')">Tutorial</button>
       </div>
       
-        <!-- Quantum Physics -->
-        <div id="physics" class="tab-content active">
-          <a href="evolution.html" target="_blank" class="post-card">
-            <div class="post-image">
-              <img src="img/physics1.jpg" alt=" Image">
-            </div>
-            <div class="post-content">
-              <h3>Evolution of Computing: From Past to Future</h3>
-<p>This course offers a guided journey through the evolution of computing, tracing how humanity moved from early counting tools and mechanical machines to the digital age and emerging quantum technologies. Through nine thematic modules, students will explore key inventions, influential figures, and technological breakthroughs that shaped the computing landscape. The course highlights not only the technical progression but also the societal, scientific, and philosophical impacts of each era. By the end, learners will gain a clear understanding of how computing has developed—and where it’s headed next.
+        <!-- Course -->
+        <div id="course" class="tab-content active">
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evolution of Computing Course</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #100f0f;
+      animation: fadeIn 1.5s ease-in;
+    }
 
-</p>
-              </p>
-              <div class="meta">
-                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
-              </div>
-            </div>
-          </a>
-      
-          <a href="https://blogger.com/nature-walk" target="_blank" class="post-card">
-            <div class="post-image">
-              <img src="img/physics2.jpg" alt="Nature Blog">
-            </div>
-            <div class="post-content">
-              <h3>The Double-Slit Experiment Explained – The Mystery That Shook Physics</h3>
-              <p> What if just watching something changed its behavior? This tutorial dives deep into the famous double-slit experiment, revealing how observing quantum particles collapses their wave function. Using animations and clear language, we’ll show how this simple experiment continues to challenge everything we know about space, time, and consciousness.</p>
-              <div class="meta">
-               
-                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
-              </div>
-            </div>
-          </a>
+   .tab-content{
+    color: black;
+   }
+  
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    h2 {
+      color: #00b4db;
+      margin-top: 1.5rem;
+    }
+
+    p, li {
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideDown {
+      from {transform: translateY(-100%);}
+      to {transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .highlight {
+      color: #f9d423;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1></h1>
+  </header>
+
+  <section>
+    <h2>Course Description</h2>
+    <p>
+      The <span class="highlight">Evolution of Computing</span> course dives deep into the rich history and development of computing systems — from early counting tools and mechanical inventions to modern AI and quantum computers. This journey through time combines historical narratives, technological breakthroughs, and the socio-cultural impact of computing.
+    </p>
+    <p>
+      Students explore key inventions, major figures, and landmark events that transformed computation from an abstract concept to a powerful force shaping the modern world. Topics range from the theoretical underpinnings laid by pioneers like Turing and Babbage to the societal revolution brought about by the internet, mobile devices, and artificial intelligence.
+    </p>
+
+    <h2>Why This Course Matters</h2>
+    <ul>
+      <li>Provides a contextual foundation to understand today’s digital technologies</li>
+      <li>Develops technological literacy and historical awareness</li>
+      <li>Prepares students to engage with modern ethical and social issues in tech</li>
+      <li>Encourages critical thinking about future innovations</li>
+    </ul>
+
+    <h2>Course Objectives</h2>
+    <ul>
+      <li>Chronicle key historical phases of computing evolution</li>
+      <li>Explain innovations in hardware, software, and system architecture</li>
+      <li>Analyze the contributions of major figures in computing history</li>
+      <li>Assess the socio-political influences on technological change</li>
+      <li>Evaluate current and future technologies from a historical perspective</li>
+      <li>Explore ethical implications of digital transformation</li>
+    </ul>
+  </section>
+</body>
+</html>
         </div>
       
-<!-- Quantum Computing -->
-<div id="computing" class="tab-content active">
-  <a href="https://medium.com/my-first-blog" target="_blank" class="post-card">
-    <div class="post-image">
-      <img src="img/bit.jpg" alt="Blog Image">
-    </div>
-    <div class="post-content">
-      <h3>Evolution of Computing: From Past to Future</h3>
-<p>This course offers a guided journey through the evolution of computing, tracing how humanity moved from early counting tools and mechanical machines to the digital age and emerging quantum technologies. Through nine thematic modules, students will explore key inventions, influential figures, and technological breakthroughs that shaped the computing landscape. The course highlights not only the technical progression but also the societal, scientific, and philosophical impacts of each era. By the end, learners will gain a clear understanding of how computing has developed—and where it’s headed next.
+<!-- Path-->
+<div id="path" class="tab-content active">
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evolution of Computing - Learning Path</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #000000;
+      animation: fadeIn 1.5s ease-in;
+    }
 
-      </p>
-      <div class="meta">
-        
-        <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
-      </div>
-    </div>
-  </a>
+   
 
-  <a href="https://blogger.com/nature-walk" target="_blank" class="post-card">
-    <div class="post-image">
-      <img src="img/entanglement.jpg" alt="Nature Blog">
-    </div>
-    <div class="post-content">
-      <h3>How Qubits Work – Superposition, Entanglement, and Quantum Gates</h3>
-      <p>Take a closer look at the magical building blocks of quantum computers: qubits. This episode explains how superposition lets a qubit be in multiple states at once, how entanglement links qubits across space, and how quantum gates perform computations in ways classical logic never could. With visuals and real-life metaphors, this is the perfect foundation for understanding real quantum algorithms.</p>
-      <div class="meta">
-       
-        <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
-      </div>
-    </div>
-  </a>
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #f9d423;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    h2 {
+      color: #00d4ff;
+      margin-top: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    p, li {
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideDown {
+      from {transform: translateY(-100%);}
+      to {transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .step-title {
+      font-weight: bold;
+      color: #fbc02d;
+      margin-top: 1rem;
+    }
+    .tab-content{
+      color:black;
+    }
+    
+  </style>
+</head>
+<body>
+
+
+  <section>
+    <h2>Comprehensive Learning Path</h2>
+    <p>
+      This structured learning path guides students through the fundamental phases of computing history, theory, architecture, social impact, and modern applications. Each module builds on the previous one, offering a layered and contextual understanding of computing evolution.
+    </p>
+
+    <h2>Learning Path Modules</h2>
+    <ul>
+      <li>
+        <span class="step-title">Module 1: Foundations of Computation</span>
+        <ul>
+          <li>Ancient calculation tools: abacus, tally systems</li>
+          <li>Philosophical and mathematical roots of algorithms</li>
+          <li>Boolean logic and binary systems</li>
+        </ul>
+      </li>
+
+      <li>
+        <span class="step-title">Module 2: The Mechanical Era</span>
+        <ul>
+          <li>Pascaline, Leibniz’s Stepped Reckoner</li>
+          <li>Charles Babbage’s Analytical Engine</li>
+          <li>Ada Lovelace and early programming concepts</li>
+        </ul>
+      </li>
+
+      <li>
+        <span class="step-title">Module 3: Birth of Electronic Computing</span>
+        <ul>
+          <li>ENIAC, UNIVAC, Colossus, and early vacuum tube systems</li>
+          <li>Turing machines and the concept of universal computation</li>
+          <li>Von Neumann architecture</li>
+        </ul>
+      </li>
+
+      <li>
+        <span class="step-title">Module 4: Mainframe and Minicomputers</span>
+        <ul>
+          <li>Rise of IBM, batch processing, punched cards</li>
+          <li>DEC minicomputers and increased accessibility</li>
+          <li>Foundations of operating systems</li>
+        </ul>
+      </li>
+
+      <li>
+        <span class="step-title">Module 5: Personal Computing Revolution</span>
+        <ul>
+          <li>Apple, IBM PC, Microsoft, and the GUI revolution</li>
+          <li>Evolution of input/output devices</li>
+          <li>Shift from command line to graphical interfaces</li>
+        </ul>
+      </li>
+
+      <li>
+        <span class="step-title">Module 6: The Internet and Networked World</span>
+        <ul>
+          <li>Development of ARPANET, TCP/IP, and the World Wide Web</li>
+          <li>Impact of email, browsers, and search engines</li>
+          <li>Rise of social media and cloud computing</li>
+        </ul>
+      </li>
+
+      <li>
+        <span class="step-title">Module 7: Mobile and Ubiquitous Computing</span>
+        <ul>
+          <li>Smartphones, tablets, and wearable tech</li>
+          <li>Wireless communication and global connectivity</li>
+          <li>IoT (Internet of Things)</li>
+        </ul>
+      </li>
+
+      <li>
+        <span class="step-title">Module 8: Artificial Intelligence and Big Data</span>
+        <ul>
+          <li>Machine learning fundamentals</li>
+          <li>Neural networks, natural language processing</li>
+          <li>Ethical implications of AI and automation</li>
+        </ul>
+      </li>
+
+      <li>
+        <span class="step-title">Module 9: Future Frontiers</span>
+        <ul>
+          <li>Quantum computing basics and potential</li>
+          <li>Neuromorphic computing and brain-inspired architectures</li>
+          <li>Sustainability and the future of computing ethics</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</body>
+</html>
+
+
 </div>
 
-        <!-- Quantum Programming -->
-        <div id="programming" class="tab-content">
+        <!-- Video -->
+        <div id="video" class="tab-content">
           <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
             <div class="post-image">
-              <img src="img/pro1.jpg" alt="Quantum Article">
+              <img src="img/t1.jpg" alt="Quantum Article">
             </div>
             <div class="post-content">
-              <h3>Quantum Programming 101 – Your First Quantum Code with Qiskit</h3>
-              <p>Ready to write your first quantum program? In this hands-on tutorial, we’ll walk through installing Qiskit, setting up your environment, and writing a simple quantum circuit that uses superposition and measurement. No advanced math required—just follow along and run real quantum code on IBM’s quantum simulator!</p>
-              <div class="meta">
+              <h3>Module 1: Foundations of Computation</h3>
+<p>This module explores the early conceptual and practical beginnings of computing. Students will learn how ancient civilizations developed counting systems and tools such as the abacus and tally marks to perform calculations. The module delves into foundational mathematical principles, including the development of zero, positional notation, and the early notions of algorithms as formalized by al-Khwarizmi. Special attention is given to Boolean logic, binary systems, and how abstract mathematical ideas began to shape the theoretical framework of computation long before the first machines were built.
+
+</p>              <div class="meta">
                
                 <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
               </div>
             </div>
           </a>
+
+
+          <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
+            <div class="post-image">
+              <img src="img/t2.jpg" alt="Quantum Article">
+            </div>
+            <div class="post-content">
+              <h3>Module 2: The Mechanical Era</h3>
+<p>Focusing on the age of mechanical computation, this module investigates the invention and development of early machines designed to perform arithmetic. Students will study devices like Blaise Pascal’s Pascaline and Gottfried Leibniz’s Stepped Reckoner. Central to this module is Charles Babbage’s Analytical Engine—considered a precursor to the modern computer—and Ada Lovelace’s contributions as the first programmer. The module highlights how these innovations combined mechanical engineering with abstract computation, laying critical groundwork for programmable machines.
+
+</p>              <div class="meta">
+               
+                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
+            <div class="post-image">
+              <img src="img/t3.jpg" alt="Quantum Article">
+            </div>
+            <div class="post-content">
+              <h3>Module 3: Birth of Electronic Computing</h3>
+<p>This module marks the transition from mechanical to electronic computing. Students will explore the invention of the first programmable electronic computers such as the ENIAC, Colossus, and UNIVAC, and understand the importance of vacuum tube technology. Theoretical advancements are also emphasized, particularly Alan Turing’s concept of the universal machine and John von Neumann’s stored-program architecture, which fundamentally shaped computer design. This era also sets the stage for the digital revolution through innovations in memory storage, data processing, and computational logic.</p>               
+                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
+            <div class="post-image">
+              <img src="img/t4.jpg" alt="Quantum Article">
+            </div>
+            <div class="post-content">
+              <h3>Module 4: Mainframes and Minicomputers</h3>
+<p>During the mid-20th century, computing moved into the business and government sectors through powerful mainframes. This module explores the rise of companies like IBM, the use of punched cards, and the evolution of batch processing systems. The development of minicomputers in the 1960s and 70s is also examined, which marked a significant step toward more affordable and decentralized computing. Students will learn about the early operating systems, programming environments, and the growing need for standardization and interoperability.</p>              <div class="meta">
+               
+                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
+            <div class="post-image">
+              <img src="img/t5.jpg" alt="Quantum Article">
+            </div>
+            <div class="post-content">
+              <h3>Module 5: The Personal Computing Revolution</h3>
+<p>This module traces the shift from institutional computing to personal computing. Students will examine how companies like Apple and Microsoft introduced user-friendly machines to the public, radically changing access to technology. Key developments include the introduction of graphical user interfaces (GUIs), personal productivity software, and the mouse. The module also explores hobbyist computing culture, the spread of home computers like the Commodore 64 and early Macintoshes, and the socio-economic changes brought on by personal access to powerful computational tools.
+
+</p>              <div class="meta">
+               
+                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
+            <div class="post-image">
+              <img src="img/t6.jpg" alt="Quantum Article">
+            </div>
+            <div class="post-content">
+              <h3>Module 6: The Internet and Networked World</h3>
+<p>In this module, students will investigate the evolution of networking technologies, beginning with ARPANET and the development of TCP/IP. The rise of the World Wide Web in the 1990s is explored alongside the emergence of browsers, search engines, and e-commerce platforms. The course also covers how the internet redefined communication through email, forums, and eventually social media. Topics such as internet infrastructure, protocols, the dot-com boom, and the role of open standards will be discussed to understand the internet’s profound global impact.</p>              <div class="meta">
+               
+                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
+              </div>
+            </div>
+          </a>
+
+
+
+<a href="https://medium.com/quantum-education" target="_blank" class="post-card">
+            <div class="post-image">
+              <img src="img/t7.jpg" alt="Quantum Article">
+            </div>
+            <div class="post-content">
+              <h3>Module 7: Mobile and Ubiquitous Computing</h3>
+<p>With the turn of the 21st century, computing became mobile, pervasive, and interconnected. This module examines the development of smartphones, tablets, wearables, and the technologies that enable wireless communication. Students will learn about mobile operating systems, app ecosystems, and cloud services that support real-time data access from virtually anywhere. The concept of the Internet of Things (IoT) is introduced, along with its applications in smart homes, healthcare, transportation, and more. This module highlights how computing is no longer confined to a single device or location.
+
+</p>              <div class="meta">
+               
+                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
+              </div>
+            </div>
+          </a>
+
+
+
+          <a href="https://medium.com/quantum-education" target="_blank" class="post-card">
+            <div class="post-image">
+              <img src="img/t8.jpg" alt="Quantum Article">
+            </div>
+            <div class="post-content">
+              <h3>Module 8: Artificial Intelligence and Beyond</h3>
+<p>The final module explores the transformative power of artificial intelligence (AI), big data, and emerging computing paradigms. Students will learn the foundations of machine learning, neural networks, and natural language processing. The role of data in shaping predictive systems, automation, and recommendation engines is analyzed. The module also explores the ethical implications of AI—bias, privacy, job displacement—as well as future frontiers such as quantum computing, neuromorphic chips, and sustainable computing initiatives. This closing module encourages students to think critically about what comes next in the computing journey.
+
+Let me know if you'd like these formatted for web display, as part of a course handbook, or transformed into slides or interactive content!
+
+
+
+</p>              <div class="meta">
+               
+                <span><i class="fas fa-map-marker-alt"></i> Site: Youtube</span>
+              </div>
+            </div>
+          </a>
+
+
       
           <a href="https://techjournal.com/ai-business" target="_blank" class="post-card">
             <div class="post-image">
-              <img src="img/pro2.jpg" alt="AI Article">
+              <img src="img/t9.jpg" alt="AI Article">
             </div>
             <div class="post-content">
-              <h3>Build a Quantum Teleportation Program – Step-by-Step with Q#</h3>
-              <p>Quantum teleportation sounds like sci-fi, but it’s real—and you can code it. In this beginner-to-intermediate Q# tutorial, we’ll guide you through writing a program that teleports the state of one qubit to another using entanglement. Learn the syntax, logic, and power of Q# through this incredible experiment made executable!
+              <h3>Module 9: The Quantum Era – Computing at the Edge of Physics</h3>
+<p>This module explores the emerging world of quantum computing, where classical bits are replaced by qubits that can exist in multiple states simultaneously. Students will learn how quantum principles like superposition and entanglement enable new forms of computation far beyond the capabilities of traditional systems. The module covers basic quantum logic, real-world applications (like cryptography and materials science), and current challenges in building scalable, reliable quantum hardware. It concludes with a forward-looking discussion on how quantum technologies may transform science, industry, and our understanding of computation itself.
 
+></p>
               </p>
               <div class="meta">
                
@@ -619,6 +949,7 @@
               </div>
             </div>
           </a>
+          
         </div>
       </div>
 
