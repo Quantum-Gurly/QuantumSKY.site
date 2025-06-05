@@ -81,6 +81,20 @@
         color: #A3DFFF;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         overflow: hidden;
+
+@media only screen and (max-width: 767px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+/* Optional: Ensure it's visible on larger screens */
+@media only screen and (min-width: 768px) {
+  .desktop-only {
+    display: block;
+  }
+}
+
       }
   
       #hero::before {
@@ -705,6 +719,7 @@
                 width: 100px;
                 height: 100px;
                 font-size: 100px;
+                padding: 20px;
               }
             }
           </style>
